@@ -1,0 +1,151 @@
+html[lang='he'] {
+	direction: rtl;
+}
+
+html {
+	background: url(../img/dam2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	// @include outer-container;
+	margin: 0 auto;
+	font-family: $font-family;
+	font-size: $base-font-size;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+	&:active, &:visited {
+		color: black;
+	}
+}
+
+i {
+	display: inline-block;
+	font-style: normal;
+}
+
+%h-tags {
+	font-family: $main-font;
+	font-weight: normal;
+}
+
+@mixin h-tag-style {
+	@for $i from 1 through 6 {
+		h#{$i} {
+			@extend %h-tags;
+		}
+	}
+}
+
+@include h-tag-style;
+
+h2 {
+	font-size: 2.85em;
+}
+
+h3 {
+	font-size: 1.65em;
+}
+
+h4 {
+	font-size: 1.25em;
+	font-family: $main-font;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+table {
+	width: 100%;
+}
+
+.inner {
+	// @include outer-container();
+	margin: 0 auto;
+	width: $site-width;
+	overflow: hidden;
+}
+
+.site-header {
+	// @include span-columns(12);
+	// @include outer-container();
+
+	height: 100px;
+	background: rgba(0,0,0,0.8);
+	font-family: $main-font;
+
+	nav {
+		// @include span-columns(12);
+		width: 100%;
+		font-size: 1.5rem;
+		text-align: center;
+		// background: $green;
+
+		& > ul > li {
+			display: inline-block;
+			margin-right: -4px;
+			
+			a {
+				color: white;
+				height: 50px;
+				padding: 15px 24px;
+				line-height: 50px;
+
+				&:hover {
+					background: $light-green;
+					@include transition(0.5s all ease)
+				}
+			}
+		}
+	}
+}
+
+// /**
+//  * header design
+//  */
+// .site-header {
+// 	@extend .clearfix;
+
+// 	h1 {
+// 		float: right;
+
+// 		.logo {
+// 			margin-left: 33px;
+// 			img {
+// 				width: 154px;
+// 				height: 42px;
+// 			}
+// 		}
+// 	}
+
+// 	nav {
+// 		float: right;
+// 		padding: 33px 0;
+
+// 		> * {
+// 			float: right;
+// 		}
+
+// 		.page-menu {
+// 			margin-left: 165px;
+// 		}
+
+// 		.search {
+// 			margin-left: 203px;
+// 		}
+// 	}
+
+// 	select, input {
+// 		width: 280px;
+// 	}
+// }
