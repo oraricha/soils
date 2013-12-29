@@ -3,7 +3,7 @@ html[lang='he'] {
 }
 
 html {
-	background: url(../img/dam2.jpg) no-repeat center center fixed; 
+	background: black url(../img/dam3.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -15,6 +15,7 @@ body {
 	margin: 0 auto;
 	font-family: $font-family;
 	font-size: $base-font-size;
+	// background: rgba(255,255,255,0.2);
 }
 
 a {
@@ -47,7 +48,8 @@ i {
 @include h-tag-style;
 
 h2 {
-	font-size: 2.85em;
+	font-size: 1.55rem;
+	font-weight: bold;
 }
 
 h3 {
@@ -57,6 +59,10 @@ h3 {
 h4 {
 	font-size: 1.25em;
 	font-family: $main-font;
+}
+
+p {
+	font-size: 1.2rem;
 }
 
 ul {
@@ -70,22 +76,17 @@ table {
 }
 
 .inner {
-	// @include outer-container();
 	margin: 0 auto;
-	width: $site-width;
-	overflow: hidden;
+	// min-width: $site-width;
+	width: 95%;
 }
 
 .site-header {
-	// @include span-columns(12);
-	// @include outer-container();
-
 	height: 100px;
 	background: rgba(0,0,0,0.8);
 	font-family: $main-font;
 
 	nav {
-		// @include span-columns(12);
 		width: 100%;
 		font-size: 1.5rem;
 		text-align: center;
@@ -98,8 +99,8 @@ table {
 			a {
 				color: white;
 				height: 50px;
-				padding: 15px 24px;
-				line-height: 50px;
+				padding: 36px 24px;
+				line-height: 100px;
 
 				&:hover {
 					background: $light-green;
@@ -110,40 +111,32 @@ table {
 	}
 }
 
-// /**
-//  * header design
-//  */
-// .site-header {
-// 	@extend .clearfix;
+section.main {
+	.about {
+		margin-top: 1rem;
 
-// 	h1 {
-// 		float: right;
+		.summary {
+			@include span-columns(7);
+			background: rgba(255,255,255,0.5);
+			padding: 0.5rem;
 
-// 		.logo {
-// 			margin-left: 33px;
-// 			img {
-// 				width: 154px;
-// 				height: 42px;
-// 			}
-// 		}
-// 	}
+			ul {
+				list-style-type: disc;
+				margin-left: 2rem;
+			}
+		}
 
-// 	nav {
-// 		float: right;
-// 		padding: 33px 0;
+		.media {
+			@include span-columns(5);
+			@include omega();
+			// @include box-shadow(0px 0px 23px 4px $box-shadow-color);
 
-// 		> * {
-// 			float: right;
-// 		}
+			height: 400px;
+			overflow: hidden;
+		}
+	}
+}
 
-// 		.page-menu {
-// 			margin-left: 165px;
-// 		}
-
-// 		.search {
-// 			margin-left: 203px;
-// 		}
-// 	}
 
 // 	select, input {
 // 		width: 280px;

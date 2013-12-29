@@ -12,7 +12,7 @@ $site-width: 1280px;
 $main-content-width: 1078px;
 
 $text-padding: 14px;
-$font-family: arial;
+$font-family: Raleway, arial;
 $main-font: Raleway;
 $base-font-size: 16px;
 
@@ -28,7 +28,7 @@ $light-blue-text: #7edbff;
 
 
 
-$box-shadow-color: #cbcbcb;
+$box-shadow-color: #000;
 
 $positive-text-color: #419639;
 $negative-text-color: #F06264;
@@ -70,7 +70,7 @@ $footer-bg-color: #414040;
 }
 
 .bold {
-	font-family: MetaliMedium
+	font-weight: bold;
 }
 
 .negative {

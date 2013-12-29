@@ -616,7 +616,7 @@ textarea {
 }
 
 .bold {
-  font-family: MetaliMedium;
+  font-weight: bold;
 }
 
 .negative {
@@ -632,7 +632,7 @@ html[lang='he'] {
 }
 
 html {
-  background: url(../img/dam2.jpg) no-repeat center center fixed;
+  background: black url(../img/dam3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -641,7 +641,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: arial;
+  font-family: Raleway, arial;
   font-size: 16px;
 }
 
@@ -664,7 +664,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 2.85em;
+  font-size: 1.55rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -674,6 +675,10 @@ h3 {
 h4 {
   font-size: 1.25em;
   font-family: Raleway;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 ul {
@@ -688,8 +693,7 @@ table {
 
 .inner {
   margin: 0 auto;
-  width: 1280px;
-  overflow: hidden;
+  width: 95%;
 }
 
 .site-header {
@@ -709,8 +713,8 @@ table {
 .site-header nav > ul > li a {
   color: white;
   height: 50px;
-  padding: 15px 24px;
-  line-height: 50px;
+  padding: 36px 24px;
+  line-height: 100px;
 }
 .site-header nav > ul > li a:hover {
   background: #2ecc71;
@@ -718,6 +722,37 @@ table {
   -o-transition: 0.5s all ease;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
+}
+
+section.main .about {
+  margin-top: 1rem;
+}
+section.main .about .summary {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+}
+section.main .about .summary:last-child {
+  margin-right: 0;
+}
+section.main .about .summary ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+section.main .about .media {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-right: 0;
+  height: 400px;
+  overflow: hidden;
+}
+section.main .about .media:last-child {
+  margin-right: 0;
 }
 
 /* ==========================================================================
