@@ -1,4 +1,8 @@
+$window = $(window);
+
 $(document).ready(function(){
+	setSectionHeight();
+	
 	$(".next").click(function(e) {
 		e.preventDefault();
 		var href = e.target.href;
@@ -19,4 +23,9 @@ var resizeHeader = function() {
 		var fromTop = $("body").scrollTop();
 		$(".site-header").toggleClass("shrink", (fromTop > 200));
 	});
+};
+
+var setSectionHeight = function() {
+	var viewportHeight = $window.height();
+	$(".main,.solution-types").height(viewportHeight);
 };
