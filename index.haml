@@ -13,18 +13,19 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	/ <link rel="stylesheet" href="http://www.fontface.co.il/fonts/1478.css.aspx" charset="utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:500,700' rel='stylesheet' type='text/css'>
 	/ <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	%link{:rel => "stylesheet", :href => "css/main.css"} 
+	%link{:rel => "stylesheet", :href => "css/main.css"}
 
 	%title
 		sensoils LTD
 %body
 	%header.site-header
 		.inner
-
+			%h1
+				%a{:href => "#", :title => "sensoil"} Sensoil
 		%nav
-			%ul 
+			%ul
 				%li
 					%a.button{:href => "#"} Home
 				%li
@@ -64,14 +65,19 @@
 							%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
 						%li
 							%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			
-			%section.solution-types
-				%ul 
-					%li
-						%img{:src => "#", :alt => ""}
-					%li
-						%img{:src => "#", :alt => ""}
-					%li
-						%img{:src => "#", :alt => ""}
-		%footer
-			© sensoils inc.
+				%a.next{:href => "#solution-types"} 
+
+	%section.solution-types#solution-types
+		.inner
+			%ul 
+				%li
+					%img{:src => "#", :alt => ""}
+				%li
+					%img{:src => "#", :alt => ""}
+				%li
+					%img{:src => "#", :alt => ""}
+	%footer
+		© sensoils inc.
+%script(type="text/javascript" src="js/vendor/jquery-1.10.2.min.js")
+%script(type="text/javascript" src="js/main.js")
+
