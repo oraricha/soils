@@ -8,6 +8,12 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	font-size: 1em;
+
+	@media screen and (max-width: 1366px) {
+		font-size: 0.7em;
+	}
 }
 
 body {
@@ -76,6 +82,8 @@ table {
 }
 
 .inner {
+	@extend .clearfix;
+
 	margin: 0 auto;
 	// min-width: $site-width;
 	width: 95%;
@@ -120,7 +128,7 @@ table {
 		& > ul > li {
 			display: inline-block;
 			margin-right: -4px;
-			
+
 			a {
 				height: 50px;
 				padding: 36px 24px;
@@ -148,29 +156,54 @@ table {
 	}
 }
 
-section.main {
+section.about {
 	margin-top: $header-height + 1rem;
-	.about {
+
+	.summary {
+		@include span-columns(7);
+
+		@extend .clearfix;
+		background: rgba(255,255,255,0.85);
+		padding: 0.5rem;
+
+		ul {
+			list-style-type: disc;
+			margin-left: 2rem;
+		}
+	}
+
+	.media {
+		@include span-columns(5);
+		@include omega();
+
+		@extend .clearfix;
+		// @include box-shadow(0px 0px 23px 4px $box-shadow-color);
+
+		height: 400px;
+		height: 31.1rem;
+		overflow: hidden;
+
+		ul {
+			@extend .clearfix;
+			// float: right;
+		}
+	}
+
+	.solutions {
+		@include span-columns(12);
+
+		@extend .clearfix;
+
+		text-align: center;
 		margin-top: 1rem;
 
-		.summary {
-			@include span-columns(7);
-			background: rgba(255,255,255,0.85);
-			padding: 0.5rem;
-
-			ul {
-				list-style-type: disc;
-				margin-left: 2rem;
-			}
-		}
-
-		.media {
-			@include span-columns(5);
-			@include omega();
-			// @include box-shadow(0px 0px 23px 4px $box-shadow-color);
-
-			height: 400px;
-			overflow: hidden;
+		li {
+			@include span-columns(3);
+			display: inline-block;
+			height: 17rem;
+			width: 30%;
+			background: red;
+			margin-right: 5%;
 		}
 	}
 }
@@ -179,11 +212,19 @@ section.main {
 	text-align: center;
 	width: 100%;
 	font-size: 4rem;
-	color: white !important;
 	margin: 1rem 0;
+	float: left;
 
-	@extend .fa;
-	@extend .fa-chevron-circle-down;
+	a {
+		@extend .fa;
+		@extend .fa-chevron-circle-down;
+
+		display: inline-block;
+		height: 65px;
+		width: 55px;
+		color: white;
+	}
+
 }
 
 .solution-types {

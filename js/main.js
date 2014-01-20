@@ -2,7 +2,8 @@ $window = $(window);
 
 $(document).ready(function(){
 	setSectionHeight();
-	
+	setSliderHeight();
+
 	$(".next").click(function(e) {
 		e.preventDefault();
 		var href = e.target.href;
@@ -15,10 +16,14 @@ $(document).ready(function(){
 	});
 
 	resizeHeader();
+
+	$window.resize(function() {
+		setSectionHeight();
+		setSliderHeight();
+	});
 });
 
 var resizeHeader = function() {
-	$window = $(window);
 	$window.on("scroll", function() {
 		var fromTop = $("body").scrollTop();
 		$(".site-header").toggleClass("shrink", (fromTop > 200));
@@ -27,5 +32,11 @@ var resizeHeader = function() {
 
 var setSectionHeight = function() {
 	var viewportHeight = $window.height();
-	$(".main,.solution-types").height(viewportHeight);
+	$("body section").height(viewportHeight);
+};
+
+var setSliderHeight = function () {
+	var slider = $(".about .slider");
+	var summary = $(".summary");
+	slider.height(summary.height() + 10 + "px");
 };

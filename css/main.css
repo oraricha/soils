@@ -640,7 +640,7 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
-.fa, .next {
+.fa, .next a {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -714,11 +714,11 @@ textarea {
   float: left;
 }
 
-.fa.pull-left, .pull-left.next {
+.fa.pull-left, .next a.pull-left {
   margin-right: .3em;
 }
 
-.fa.pull-right, .pull-right.next {
+.fa.pull-right, .next a.pull-right {
   margin-left: .3em;
 }
 
@@ -2003,7 +2003,7 @@ textarea {
   content: "\f139";
 }
 
-.fa-chevron-circle-down:before, .next:before {
+.fa-chevron-circle-down:before, .next a:before {
   content: "\f13a";
 }
 
@@ -2371,11 +2371,17 @@ html[lang='he'] {
 }
 
 html {
-  background: black url(../img/dam2.jpg) no-repeat center center fixed;
+  background: black url(../img/dam3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-size: 1em;
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 0.7em;
+  }
 }
 
 body {
@@ -2493,13 +2499,10 @@ table {
   line-height: 3.125rem;
 }
 
-section.main {
+section.about {
   margin-top: 7.25rem;
 }
-section.main .about {
-  margin-top: 1rem;
-}
-section.main .about .summary {
+section.about .summary {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -2507,23 +2510,49 @@ section.main .about .summary {
   background: rgba(255, 255, 255, 0.85);
   padding: 0.5rem;
 }
-section.main .about .summary:last-child {
+section.about .summary:last-child {
   margin-right: 0;
 }
-section.main .about .summary ul {
+section.about .summary ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
-section.main .about .media {
+section.about .media {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
   margin-right: 0;
   height: 400px;
+  height: 31.1rem;
   overflow: hidden;
 }
-section.main .about .media:last-child {
+section.about .media:last-child {
+  margin-right: 0;
+}
+section.about .solutions {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+section.about .solutions:last-child {
+  margin-right: 0;
+}
+section.about .solutions li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  display: inline-block;
+  height: 17rem;
+  width: 30%;
+  background: red;
+  margin-right: 5%;
+}
+section.about .solutions li:last-child {
   margin-right: 0;
 }
 
@@ -2531,18 +2560,19 @@ section.main .about .media:last-child {
   text-align: center;
   width: 100%;
   font-size: 4rem;
-  color: white !important;
   margin: 1rem 0;
+  float: left;
+}
+.next a {
+  display: inline-block;
+  height: 65px;
+  width: 55px;
+  color: white;
 }
 
 .solution-types {
   background: white;
-  background: white url(../img/dam.jpg) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   min-height: 650px;
+  min-height: 650px;
 }
 
 /* ==========================================================================
@@ -2620,16 +2650,21 @@ section.main .about .media:last-child {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, .site-header h1:before,
+.clearfix:before, .inner:before, .site-header h1:before, section.about .summary:before, section.about .media:before, section.about .media ul:before, section.about .solutions:before,
 .clearfix:after,
-.site-header h1:after {
+.inner:after,
+.site-header h1:after,
+section.about .summary:after,
+section.about .media:after,
+section.about .media ul:after,
+section.about .solutions:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.clearfix:after, .site-header h1:after {
+.clearfix:after, .inner:after, .site-header h1:after, section.about .summary:after, section.about .media:after, section.about .media ul:after, section.about .solutions:after {
   clear: both;
 }
 
@@ -2637,7 +2672,7 @@ section.main .about .media:last-child {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, .site-header h1 {
+.clearfix, .inner, .site-header h1, section.about .summary, section.about .media, section.about .media ul, section.about .solutions {
   *zoom: 1;
 }
 
