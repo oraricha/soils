@@ -2371,7 +2371,7 @@ html[lang='he'] {
 }
 
 html {
-  background: black url(../img/dam3.jpg) no-repeat center center fixed;
+  background: black url(../img/dam4.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2546,14 +2546,19 @@ section.about .solutions li {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  display: inline-block;
-  height: 17rem;
   width: 30%;
-  background: red;
-  margin-right: 5%;
 }
 section.about .solutions li:last-child {
   margin-right: 0;
+}
+section.about .solutions li a {
+  margin-right: 5%;
+  display: inline-block;
+  height: 17rem;
+  margin-right: 5%;
+  display: inline-block;
+  background: red;
+  width: 100%;
 }
 
 .next {

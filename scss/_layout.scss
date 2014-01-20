@@ -3,7 +3,7 @@ html[lang='he'] {
 }
 
 html {
-	background: black url(../img/dam3.jpg) no-repeat center center fixed; 
+	background: black url(../img/dam4.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -199,11 +199,17 @@ section.about {
 
 		li {
 			@include span-columns(3);
-			display: inline-block;
-			height: 17rem;
 			width: 30%;
-			background: red;
-			margin-right: 5%;
+
+			a {
+				margin-right: 5%;
+				display: inline-block;
+				height: 17rem;
+				margin-right: 5%;
+				display: inline-block;
+				background: red;
+				width: 100%;
+			}
 		}
 	}
 }
