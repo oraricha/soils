@@ -29,7 +29,7 @@
 					%li
 						%a.button{:href => "#"} Home
 					%li
-						%a.button{:href => "#"} Solutions
+						%a.button{:href => "#solutions"} Solutions
 					%li
 						%a.button{:href => "#"} Experience
 					%li
@@ -64,7 +64,7 @@
 						%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
 					%li
 						%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			.solutions
+			.solutions#solutions
 				%ul 
 					%li
 						%a{:href => ""} סכרים
@@ -73,17 +73,129 @@
 					%li
 						%a{:href => ""} זיהום ושיקום קרקע
 			.next
-				%a{:href => "#solution-types"}
+				%a{:href => "#solution1"}
 
-	%section.solution-types#solution-types
+	/ %section.solution-types#solution-types
+	/ 	.inner
+	/ 		%ul
+	/ 			%li
+	/ 				%img{:src => "#", :alt => ""}
+	/ 			%li
+	/ 				%img{:src => "#", :alt => ""}
+	/ 			%li
+	/ 				%img{:src => "#", :alt => ""}
+	/ %section.experience
+	/ 	.inner
+
+	%section.solution#solution1
 		.inner
-			%ul
-				%li
-					%img{:src => "#", :alt => ""}
-				%li
-					%img{:src => "#", :alt => ""}
-				%li
-					%img{:src => "#", :alt => ""}
+			.bg
+				.main
+					%h3 Groundwater protecting from pollution hazard
+					%p 
+						%strong Minimization subsurface pollution 
+						depends on reliable and effective monitoring programs. 
+						Today, most groundwater monitoring programs are based on observation wells. Consequently, identification of 
+						pollutants in groundwater is clear evidence that contaminants already crossed the entire vadose-zone and 
+						accumulated in the aquifer. Unfortunately, only little can be done to fully remediate contaminated aquifers. 
+						Therefore effective monitoring program that aims at protecting groundwater from pollution must include vadose-zone 
+						monitoring technologies. 
+						%strong Sensoil 
+						monitoring technology provide 
+						%strong "early warning" 
+						on contamination processes 
+						in the vadose zone long before aquifer contamination turns evident.
+					%button{:type => "button", :class => "primary"} Read More
+				.solution-images
+					%ul 
+						%li 
+							%img{:src => "img/pollution.png", :alt => "Groundwater protecting from pollution hazard"}
+						%li 
+						%li 
+	%section.solution#solution2
+		.inner
+			.bg
+				.main
+					%h3 Earthen dam stability
+					%p 
+						Water infiltration through earthen dams may weaken 
+						its stability and potentially lead to dam breach. Today most monitoring programs 
+						in earthen dams are bases on measurement of the phreatic level in piezometers. 
+						Nevertheless detection of free water in well indicates undesired saturation of the dam sediment. 
+						Application of 
+						%strong Sensoil 
+						monitoring technology in earthen dams provides 
+						%strong Real time 
+						continuous information on the dam moisture. 
+						Detailed analysis data obtained by the 
+						%strong VMS 
+						is used to provide 
+						%strong early warning 
+						on potential weakening of the dam stability.
+					%button{:type => "button", :class => "primary"} Read More
+				.solution-images
+					%ul 
+						%li 
+							%img{:src => "img/dam-stability.png", :alt => "Earthen dam stability"}
+						%li 
+						%li 
+	%section.solution#solution3
+		.inner
+			.bg
+				.main
+					%h3 Optimization of Remediation Strategies
+					%p 
+						%strong In-situ bio-remediation 
+						of contaminated vadose 
+						zone is dependent on the ability to implement hydraulic 
+						and chemical conditions that promote development of specific degrading 
+						bacteria in deep sections of the subsurface. Implementation of the 
+						%strong VMS 
+						in sites that undergoes active remediation provides real time information on 
+						the actual chemical and hydrological conditions in the vadose zone as the 
+						remediation process progresses. The VMS data allows real time assessment of the 
+						remediation strategies through direct feedback from the subsurface. 
+						%strong Sensoil 
+						monitoring technology provides unique tools of proper 
+						%strong management 
+						of remediated sites.
+					%button{:type => "button", :class => "primary"} Read More
+				.solution-images
+					%ul 
+						%li 
+							%img{:src => "img/optimization.png", :alt => "Optimization of Remediation Strategies"}
+						%li 
+						%li 
+	%section.solution#solution4
+		.inner
+			.bg
+				.main
+					%h3 Heap-leach mining
+					%p 
+						%strong Heap leaching mining typically involve leaching of 
+						crushed ore with diluted acid or cyanide solution, using irrigation system 
+						such as sprinklers or drippers. Upon percolation of the leaching solvent in the ore 
+						heap metal oxides dissolve and drain down to the bottom of the heap. As a result the 
+						drained solution is enriched with the desired metal which is than processes from the 
+						metal bearing pregnant solution. Water percolation through the ore heap take place in 
+						unsaturated condition and derived by gravity and capillary forces. 
+						Implementation of 
+						%strong Sensoil 
+						monitoring technology in active heap leach pad provides the pad managers with 
+						real time information the leaching efficiency. Data collected by the 
+						%strong VMS 
+						allows direct measurements of the water flow velocities and measure the chemical evolution 
+						of the percolating solvent in the unsaturated ore. As result the solvent application cycles 
+						may be managed according to the actual chemical evolution of the percolating water in the heap 
+						in order to increase mineral extraction efficiency.
+					%button{:type => "button"} Read More
+				.solution-images
+					%ul 
+						%li 
+							%img{:src => "img/heap.png", :alt => "Heap-leach mining"}
+						%li 
+						%li 
+
 	%footer
 		© sensoils inc.
 %script(type="text/javascript" src="js/vendor/jquery-1.10.2.min.js")
