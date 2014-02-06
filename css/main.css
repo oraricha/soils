@@ -8,6 +8,8 @@
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
+/* line 11, normalize.scss */
+
 article,
 aside,
 details,
@@ -27,6 +29,8 @@ summary {
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
+/* line 30, normalize.scss */
+
 audio,
 canvas,
 video {
@@ -40,6 +44,8 @@ video {
  * Remove excess height in iOS 5 devices.
  */
 
+/* line 43, normalize.scss */
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -49,6 +55,8 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
+
+/* line 53, normalize.scss */
 
 [hidden] {
   display: none;
@@ -65,6 +73,8 @@ audio:not([controls]) {
  *    user zoom.
  */
 
+/* line 68, normalize.scss */
+
 html {
   font-size: 100%;
   /* 1 */
@@ -79,6 +89,8 @@ html {
  * elements.
  */
 
+/* line 79, normalize.scss */
+
 html,
 button,
 input,
@@ -90,6 +102,8 @@ textarea {
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
+
+/* line 91, normalize.scss */
 
 body {
   margin: 0;
@@ -103,6 +117,8 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
+/* line 103, normalize.scss */
+
 a:focus {
   outline: thin dotted;
 }
@@ -110,6 +126,8 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+
+/* line 111, normalize.scss */
 
 a:active,
 a:hover {
@@ -126,30 +144,42 @@ a:hover {
  * and Chrome.
  */
 
+/* line 126, normalize.scss */
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
+/* line 131, normalize.scss */
 
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
+/* line 136, normalize.scss */
+
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
+
+/* line 141, normalize.scss */
 
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
+/* line 146, normalize.scss */
+
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
+
+/* line 151, normalize.scss */
 
 h6 {
   font-size: 0.67em;
@@ -160,6 +190,8 @@ h6 {
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
 
+/* line 160, normalize.scss */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -168,10 +200,14 @@ abbr[title] {
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
 
+/* line 168, normalize.scss */
+
 b,
 strong {
   font-weight: bold;
 }
+
+/* line 173, normalize.scss */
 
 blockquote {
   margin: 1em 40px;
@@ -181,6 +217,8 @@ blockquote {
  * Address styling not present in Safari 5 and Chrome.
  */
 
+/* line 181, normalize.scss */
+
 dfn {
   font-style: italic;
 }
@@ -189,6 +227,8 @@ dfn {
  * Address differences between Firefox and other browsers.
  * Known issue: no IE 6/7 normalization.
  */
+
+/* line 190, normalize.scss */
 
 hr {
   -moz-box-sizing: content-box;
@@ -201,6 +241,8 @@ hr {
  * Address styling not present in IE 6/7/8/9.
  */
 
+/* line 200, normalize.scss */
+
 mark {
   background: #ff0;
   color: #000;
@@ -210,6 +252,8 @@ mark {
  * Address margins set differently in IE 6/7.
  */
 
+/* line 209, normalize.scss */
+
 p,
 pre {
   margin: 1em 0;
@@ -218,6 +262,8 @@ pre {
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
+
+/* line 218, normalize.scss */
 
 code,
 kbd,
@@ -232,6 +278,8 @@ samp {
  * Improve readability of pre-formatted text in all browsers.
  */
 
+/* line 231, normalize.scss */
+
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -242,6 +290,8 @@ pre {
  * Address CSS quotes not supported in IE 6/7.
  */
 
+/* line 241, normalize.scss */
+
 q {
   quotes: none;
 }
@@ -249,6 +299,8 @@ q {
 /**
  * Address `quotes` property not supported in Safari 4.
  */
+
+/* line 249, normalize.scss */
 
 q:before,
 q:after {
@@ -260,6 +312,8 @@ q:after {
  * Address inconsistent and variable font size in all browsers.
  */
 
+/* line 259, normalize.scss */
+
 small {
   font-size: 80%;
 }
@@ -267,6 +321,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+
+/* line 267, normalize.scss */
 
 sub,
 sup {
@@ -276,9 +332,13 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 275, normalize.scss */
+
 sup {
   top: -0.5em;
 }
+
+/* line 279, normalize.scss */
 
 sub {
   bottom: -0.25em;
@@ -292,12 +352,16 @@ sub {
  * Address margins set differently in IE 6/7.
  */
 
+/* line 291, normalize.scss */
+
 dl,
 menu,
 ol,
 ul {
   margin: 1em 0;
 }
+
+/* line 298, normalize.scss */
 
 dd {
   margin: 0 0 0 40px;
@@ -306,6 +370,8 @@ dd {
 /**
  * Address paddings set differently in IE 6/7.
  */
+
+/* line 306, normalize.scss */
 
 menu,
 ol,
@@ -316,6 +382,8 @@ ul {
 /**
  * Correct list images handled incorrectly in IE 7.
  */
+
+/* line 316, normalize.scss */
 
 nav ul,
 nav ol {
@@ -332,6 +400,8 @@ nav ol {
  * 2. Improve image quality when scaled in IE 7.
  */
 
+/* line 331, normalize.scss */
+
 img {
   border: 0;
   /* 1 */
@@ -342,6 +412,8 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
+
+/* line 340, normalize.scss */
 
 svg:not(:root) {
   overflow: hidden;
@@ -355,6 +427,8 @@ svg:not(:root) {
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
 
+/* line 352, normalize.scss */
+
 figure {
   margin: 0;
 }
@@ -367,6 +441,8 @@ figure {
  * Correct margin displayed oddly in IE 6/7.
  */
 
+/* line 364, normalize.scss */
+
 form {
   margin: 0;
 }
@@ -374,6 +450,8 @@ form {
 /**
  * Define consistent border, margin, and padding.
  */
+
+/* line 372, normalize.scss */
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -386,6 +464,8 @@ fieldset {
  * 2. Correct text not wrapping in Firefox 3.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
+
+/* line 384, normalize.scss */
 
 legend {
   border: 0;
@@ -403,6 +483,8 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
+
+/* line 398, normalize.scss */
 
 button,
 input,
@@ -423,6 +505,8 @@ textarea {
  * the UA stylesheet.
  */
 
+/* line 413, normalize.scss */
+
 button,
 input {
   line-height: normal;
@@ -434,6 +518,8 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+
+/* line 425, normalize.scss */
 
 button,
 select {
@@ -449,6 +535,8 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
+
+/* line 440, normalize.scss */
 
 button,
 html input[type="button"],
@@ -466,6 +554,8 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 
+/* line 453, normalize.scss */
+
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -477,6 +567,8 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
+
+/* line 465, normalize.scss */
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -498,6 +590,8 @@ input[type="radio"] {
  *    (include `-moz` to future-proof).
  */
 
+/* line 479, normalize.scss */
+
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -512,6 +606,8 @@ input[type="search"] {
  * on OS X.
  */
 
+/* line 491, normalize.scss */
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -520,6 +616,8 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
+
+/* line 500, normalize.scss */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -531,6 +629,8 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+
+/* line 511, normalize.scss */
 
 textarea {
   overflow: auto;
@@ -547,10 +647,14 @@ textarea {
  * Remove most spacing between table cells.
  */
 
+/* line 524, normalize.scss */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 2, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
 
 * {
   -webkit-box-sizing: border-box;
@@ -570,6 +674,8 @@ table {
    Base styles: opinionated defaults
    ========================================================================== */
 
+/* line 22, main.scss */
+
 html,
 button,
 input,
@@ -577,6 +683,8 @@ select,
 textarea {
   color: #222;
 }
+
+/* line 30, main.scss */
 
 html {
   font-size: 1em;
@@ -589,10 +697,14 @@ html {
  * Customize the background color to match your design.
  */
 
+/* line 41, main.scss */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
+/* line 46, main.scss */
 
 ::selection {
   background: #b3d4fc;
@@ -602,6 +714,8 @@ html {
 /*
  * A better looking default horizontal rule
  */
+
+/* line 55, main.scss */
 
 hr {
   display: block;
@@ -617,6 +731,8 @@ hr {
  * their containers: h5bp.com/i/440
  */
 
+/* line 69, main.scss */
+
 audio,
 canvas,
 img,
@@ -628,6 +744,8 @@ video {
  * Remove default fieldset styles.
  */
 
+/* line 80, main.scss */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -638,6 +756,8 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
+/* line 90, main.scss */
+
 textarea {
   resize: vertical;
 }
@@ -645,6 +765,8 @@ textarea {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
+
+/* line 98, main.scss */
 
 .browsehappy {
   margin: 0.2em 0;
@@ -676,24 +798,40 @@ textarea {
  * ========================
  */
 
+/* line 69, _variables.scss */
+
 .pull-right {
   float: right;
 }
+
+/* line 73, _variables.scss */
 
 .pull-left {
   float: left;
 }
 
+/* line 77, _variables.scss */
+
 .bold {
   font-weight: bold;
 }
+
+/* line 81, _variables.scss */
 
 .negative {
   color: #ed1c24;
 }
 
+/* line 85, _variables.scss */
+
 .positive {
   color: #419639;
+}
+
+/* line 89, _variables.scss */
+
+.button {
+  cursor: pointer;
 }
 
 /*!
@@ -712,6 +850,8 @@ textarea {
   font-style: normal;
 }
 
+/* line 14, _font-awesome.scss */
+
 .fa,
 .next a {
   display: inline-block;
@@ -725,32 +865,46 @@ textarea {
 
 /* makes the font 33% larger relative to the icon container */
 
+/* line 24, _font-awesome.scss */
+
 .fa-lg {
   font-size: 1.3333333333333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
 
+/* line 29, _font-awesome.scss */
+
 .fa-2x {
   font-size: 2em;
 }
+
+/* line 32, _font-awesome.scss */
 
 .fa-3x {
   font-size: 3em;
 }
 
+/* line 35, _font-awesome.scss */
+
 .fa-4x {
   font-size: 4em;
 }
+
+/* line 38, _font-awesome.scss */
 
 .fa-5x {
   font-size: 5em;
 }
 
+/* line 41, _font-awesome.scss */
+
 .fa-fw {
   width: 1.2857142857142858em;
   text-align: center;
 }
+
+/* line 45, _font-awesome.scss */
 
 .fa-ul {
   padding-left: 0;
@@ -758,9 +912,13 @@ textarea {
   list-style-type: none;
 }
 
+/* line 50, _font-awesome.scss */
+
 .fa-ul > li {
   position: relative;
 }
+
+/* line 53, _font-awesome.scss */
 
 .fa-li {
   position: absolute;
@@ -770,9 +928,13 @@ textarea {
   text-align: center;
 }
 
+/* line 60, _font-awesome.scss */
+
 .fa-li.fa-lg {
   left: -1.8571428571428572em;
 }
+
+/* line 63, _font-awesome.scss */
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -780,23 +942,33 @@ textarea {
   border-radius: .1em;
 }
 
+/* line 68, _font-awesome.scss */
+
 .pull-right {
   float: right;
 }
 
+/* line 71, _font-awesome.scss */
+
 .pull-left {
   float: left;
 }
+
+/* line 74, _font-awesome.scss */
 
 .fa.pull-left,
 .next a.pull-left {
   margin-right: .3em;
 }
 
+/* line 77, _font-awesome.scss */
+
 .fa.pull-right,
 .next a.pull-right {
   margin-left: .3em;
 }
+
+/* line 80, _font-awesome.scss */
 
 .fa-spin {
   -webkit-animation: spin 2s infinite linear;
@@ -804,38 +976,46 @@ textarea {
 }
 
 @-webkit-keyframes spin {
+  /* line 95, _font-awesome.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
+  /* line 98, _font-awesome.scss */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
 
 @-ms-keyframes spin {
+  /* line 111, _font-awesome.scss */
   0% {
     -ms-transform: rotate(0deg);
   }
 
+  /* line 114, _font-awesome.scss */
   100% {
     -ms-transform: rotate(359deg);
   }
 }
 
 @keyframes spin {
+  /* line 119, _font-awesome.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
+  /* line 122, _font-awesome.scss */
   100% {
     -webkit-transform: rotate(359deg);
     -ms-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
+
+/* line 126, _font-awesome.scss */
 
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
@@ -844,12 +1024,16 @@ textarea {
   transform: rotate(90deg);
 }
 
+/* line 134, _font-awesome.scss */
+
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+/* line 142, _font-awesome.scss */
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
@@ -858,6 +1042,8 @@ textarea {
   transform: rotate(270deg);
 }
 
+/* line 150, _font-awesome.scss */
+
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
@@ -865,12 +1051,16 @@ textarea {
   transform: scale(-1, 1);
 }
 
+/* line 158, _font-awesome.scss */
+
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
+
+/* line 166, _font-awesome.scss */
 
 .fa-stack {
   position: relative;
@@ -881,6 +1071,8 @@ textarea {
   vertical-align: middle;
 }
 
+/* line 174, _font-awesome.scss */
+
 .fa-stack-1x,
 .fa-stack-2x {
   position: absolute;
@@ -889,13 +1081,19 @@ textarea {
   text-align: center;
 }
 
+/* line 181, _font-awesome.scss */
+
 .fa-stack-1x {
   line-height: inherit;
 }
 
+/* line 184, _font-awesome.scss */
+
 .fa-stack-2x {
   font-size: 2em;
 }
+
+/* line 187, _font-awesome.scss */
 
 .fa-inverse {
   color: #ffffff;
@@ -904,1067 +1102,1589 @@ textarea {
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 
+/* line 192, _font-awesome.scss */
+
 .fa-glass:before {
   content: "\f000";
 }
+
+/* line 195, _font-awesome.scss */
 
 .fa-music:before {
   content: "\f001";
 }
 
+/* line 198, _font-awesome.scss */
+
 .fa-search:before {
   content: "\f002";
 }
+
+/* line 201, _font-awesome.scss */
 
 .fa-envelope-o:before {
   content: "\f003";
 }
 
+/* line 204, _font-awesome.scss */
+
 .fa-heart:before {
   content: "\f004";
 }
+
+/* line 207, _font-awesome.scss */
 
 .fa-star:before {
   content: "\f005";
 }
 
+/* line 210, _font-awesome.scss */
+
 .fa-star-o:before {
   content: "\f006";
 }
+
+/* line 213, _font-awesome.scss */
 
 .fa-user:before {
   content: "\f007";
 }
 
+/* line 216, _font-awesome.scss */
+
 .fa-film:before {
   content: "\f008";
 }
+
+/* line 219, _font-awesome.scss */
 
 .fa-th-large:before {
   content: "\f009";
 }
 
+/* line 222, _font-awesome.scss */
+
 .fa-th:before {
   content: "\f00a";
 }
+
+/* line 225, _font-awesome.scss */
 
 .fa-th-list:before {
   content: "\f00b";
 }
 
+/* line 228, _font-awesome.scss */
+
 .fa-check:before {
   content: "\f00c";
 }
+
+/* line 231, _font-awesome.scss */
 
 .fa-times:before {
   content: "\f00d";
 }
 
+/* line 234, _font-awesome.scss */
+
 .fa-search-plus:before {
   content: "\f00e";
 }
+
+/* line 237, _font-awesome.scss */
 
 .fa-search-minus:before {
   content: "\f010";
 }
 
+/* line 240, _font-awesome.scss */
+
 .fa-power-off:before {
   content: "\f011";
 }
 
+/* line 243, _font-awesome.scss */
+
 .fa-signal:before {
   content: "\f012";
 }
+
+/* line 246, _font-awesome.scss */
 
 .fa-gear:before,
 .fa-cog:before {
   content: "\f013";
 }
 
+/* line 250, _font-awesome.scss */
+
 .fa-trash-o:before {
   content: "\f014";
 }
+
+/* line 253, _font-awesome.scss */
 
 .fa-home:before {
   content: "\f015";
 }
 
+/* line 256, _font-awesome.scss */
+
 .fa-file-o:before {
   content: "\f016";
 }
+
+/* line 259, _font-awesome.scss */
 
 .fa-clock-o:before {
   content: "\f017";
 }
 
+/* line 262, _font-awesome.scss */
+
 .fa-road:before {
   content: "\f018";
 }
+
+/* line 265, _font-awesome.scss */
 
 .fa-download:before {
   content: "\f019";
 }
 
+/* line 268, _font-awesome.scss */
+
 .fa-arrow-circle-o-down:before {
   content: "\f01a";
 }
+
+/* line 271, _font-awesome.scss */
 
 .fa-arrow-circle-o-up:before {
   content: "\f01b";
 }
 
+/* line 274, _font-awesome.scss */
+
 .fa-inbox:before {
   content: "\f01c";
 }
 
+/* line 277, _font-awesome.scss */
+
 .fa-play-circle-o:before {
   content: "\f01d";
 }
+
+/* line 280, _font-awesome.scss */
 
 .fa-rotate-right:before,
 .fa-repeat:before {
   content: "\f01e";
 }
 
+/* line 284, _font-awesome.scss */
+
 .fa-refresh:before {
   content: "\f021";
 }
+
+/* line 287, _font-awesome.scss */
 
 .fa-list-alt:before {
   content: "\f022";
 }
 
+/* line 290, _font-awesome.scss */
+
 .fa-lock:before {
   content: "\f023";
 }
+
+/* line 293, _font-awesome.scss */
 
 .fa-flag:before {
   content: "\f024";
 }
 
+/* line 296, _font-awesome.scss */
+
 .fa-headphones:before {
   content: "\f025";
 }
+
+/* line 299, _font-awesome.scss */
 
 .fa-volume-off:before {
   content: "\f026";
 }
 
+/* line 302, _font-awesome.scss */
+
 .fa-volume-down:before {
   content: "\f027";
 }
+
+/* line 305, _font-awesome.scss */
 
 .fa-volume-up:before {
   content: "\f028";
 }
 
+/* line 308, _font-awesome.scss */
+
 .fa-qrcode:before {
   content: "\f029";
 }
+
+/* line 311, _font-awesome.scss */
 
 .fa-barcode:before {
   content: "\f02a";
 }
 
+/* line 314, _font-awesome.scss */
+
 .fa-tag:before {
   content: "\f02b";
 }
+
+/* line 317, _font-awesome.scss */
 
 .fa-tags:before {
   content: "\f02c";
 }
 
+/* line 320, _font-awesome.scss */
+
 .fa-book:before {
   content: "\f02d";
 }
+
+/* line 323, _font-awesome.scss */
 
 .fa-bookmark:before {
   content: "\f02e";
 }
 
+/* line 326, _font-awesome.scss */
+
 .fa-print:before {
   content: "\f02f";
 }
+
+/* line 329, _font-awesome.scss */
 
 .fa-camera:before {
   content: "\f030";
 }
 
+/* line 332, _font-awesome.scss */
+
 .fa-font:before {
   content: "\f031";
 }
+
+/* line 335, _font-awesome.scss */
 
 .fa-bold:before {
   content: "\f032";
 }
 
+/* line 338, _font-awesome.scss */
+
 .fa-italic:before {
   content: "\f033";
 }
+
+/* line 341, _font-awesome.scss */
 
 .fa-text-height:before {
   content: "\f034";
 }
 
+/* line 344, _font-awesome.scss */
+
 .fa-text-width:before {
   content: "\f035";
 }
+
+/* line 347, _font-awesome.scss */
 
 .fa-align-left:before {
   content: "\f036";
 }
 
+/* line 350, _font-awesome.scss */
+
 .fa-align-center:before {
   content: "\f037";
 }
+
+/* line 353, _font-awesome.scss */
 
 .fa-align-right:before {
   content: "\f038";
 }
 
+/* line 356, _font-awesome.scss */
+
 .fa-align-justify:before {
   content: "\f039";
 }
 
+/* line 359, _font-awesome.scss */
+
 .fa-list:before {
   content: "\f03a";
 }
+
+/* line 362, _font-awesome.scss */
 
 .fa-dedent:before,
 .fa-outdent:before {
   content: "\f03b";
 }
 
+/* line 366, _font-awesome.scss */
+
 .fa-indent:before {
   content: "\f03c";
 }
+
+/* line 369, _font-awesome.scss */
 
 .fa-video-camera:before {
   content: "\f03d";
 }
 
+/* line 372, _font-awesome.scss */
+
 .fa-picture-o:before {
   content: "\f03e";
 }
+
+/* line 375, _font-awesome.scss */
 
 .fa-pencil:before {
   content: "\f040";
 }
 
+/* line 378, _font-awesome.scss */
+
 .fa-map-marker:before {
   content: "\f041";
 }
+
+/* line 381, _font-awesome.scss */
 
 .fa-adjust:before {
   content: "\f042";
 }
 
+/* line 384, _font-awesome.scss */
+
 .fa-tint:before {
   content: "\f043";
 }
+
+/* line 387, _font-awesome.scss */
 
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: "\f044";
 }
 
+/* line 391, _font-awesome.scss */
+
 .fa-share-square-o:before {
   content: "\f045";
 }
+
+/* line 394, _font-awesome.scss */
 
 .fa-check-square-o:before {
   content: "\f046";
 }
 
+/* line 397, _font-awesome.scss */
+
 .fa-arrows:before {
   content: "\f047";
 }
+
+/* line 400, _font-awesome.scss */
 
 .fa-step-backward:before {
   content: "\f048";
 }
 
+/* line 403, _font-awesome.scss */
+
 .fa-fast-backward:before {
   content: "\f049";
 }
+
+/* line 406, _font-awesome.scss */
 
 .fa-backward:before {
   content: "\f04a";
 }
 
+/* line 409, _font-awesome.scss */
+
 .fa-play:before {
   content: "\f04b";
 }
+
+/* line 412, _font-awesome.scss */
 
 .fa-pause:before {
   content: "\f04c";
 }
 
+/* line 415, _font-awesome.scss */
+
 .fa-stop:before {
   content: "\f04d";
 }
+
+/* line 418, _font-awesome.scss */
 
 .fa-forward:before {
   content: "\f04e";
 }
 
+/* line 421, _font-awesome.scss */
+
 .fa-fast-forward:before {
   content: "\f050";
 }
+
+/* line 424, _font-awesome.scss */
 
 .fa-step-forward:before {
   content: "\f051";
 }
 
+/* line 427, _font-awesome.scss */
+
 .fa-eject:before {
   content: "\f052";
 }
+
+/* line 430, _font-awesome.scss */
 
 .fa-chevron-left:before {
   content: "\f053";
 }
 
+/* line 433, _font-awesome.scss */
+
 .fa-chevron-right:before {
   content: "\f054";
 }
+
+/* line 436, _font-awesome.scss */
 
 .fa-plus-circle:before {
   content: "\f055";
 }
 
+/* line 439, _font-awesome.scss */
+
 .fa-minus-circle:before {
   content: "\f056";
 }
+
+/* line 442, _font-awesome.scss */
 
 .fa-times-circle:before {
   content: "\f057";
 }
 
+/* line 445, _font-awesome.scss */
+
 .fa-check-circle:before {
   content: "\f058";
 }
+
+/* line 448, _font-awesome.scss */
 
 .fa-question-circle:before {
   content: "\f059";
 }
 
+/* line 451, _font-awesome.scss */
+
 .fa-info-circle:before {
   content: "\f05a";
 }
+
+/* line 454, _font-awesome.scss */
 
 .fa-crosshairs:before {
   content: "\f05b";
 }
 
+/* line 457, _font-awesome.scss */
+
 .fa-times-circle-o:before {
   content: "\f05c";
 }
+
+/* line 460, _font-awesome.scss */
 
 .fa-check-circle-o:before {
   content: "\f05d";
 }
 
+/* line 463, _font-awesome.scss */
+
 .fa-ban:before {
   content: "\f05e";
 }
+
+/* line 466, _font-awesome.scss */
 
 .fa-arrow-left:before {
   content: "\f060";
 }
 
+/* line 469, _font-awesome.scss */
+
 .fa-arrow-right:before {
   content: "\f061";
 }
+
+/* line 472, _font-awesome.scss */
 
 .fa-arrow-up:before {
   content: "\f062";
 }
 
+/* line 475, _font-awesome.scss */
+
 .fa-arrow-down:before {
   content: "\f063";
 }
+
+/* line 478, _font-awesome.scss */
 
 .fa-mail-forward:before,
 .fa-share:before {
   content: "\f064";
 }
 
+/* line 482, _font-awesome.scss */
+
 .fa-expand:before {
   content: "\f065";
 }
+
+/* line 485, _font-awesome.scss */
 
 .fa-compress:before {
   content: "\f066";
 }
 
+/* line 488, _font-awesome.scss */
+
 .fa-plus:before {
   content: "\f067";
 }
+
+/* line 491, _font-awesome.scss */
 
 .fa-minus:before {
   content: "\f068";
 }
 
+/* line 494, _font-awesome.scss */
+
 .fa-asterisk:before {
   content: "\f069";
 }
+
+/* line 497, _font-awesome.scss */
 
 .fa-exclamation-circle:before {
   content: "\f06a";
 }
 
+/* line 500, _font-awesome.scss */
+
 .fa-gift:before {
   content: "\f06b";
 }
+
+/* line 503, _font-awesome.scss */
 
 .fa-leaf:before {
   content: "\f06c";
 }
 
+/* line 506, _font-awesome.scss */
+
 .fa-fire:before {
   content: "\f06d";
 }
+
+/* line 509, _font-awesome.scss */
 
 .fa-eye:before {
   content: "\f06e";
 }
 
+/* line 512, _font-awesome.scss */
+
 .fa-eye-slash:before {
   content: "\f070";
 }
+
+/* line 515, _font-awesome.scss */
 
 .fa-warning:before,
 .fa-exclamation-triangle:before {
   content: "\f071";
 }
 
+/* line 519, _font-awesome.scss */
+
 .fa-plane:before {
   content: "\f072";
 }
+
+/* line 522, _font-awesome.scss */
 
 .fa-calendar:before {
   content: "\f073";
 }
 
+/* line 525, _font-awesome.scss */
+
 .fa-random:before {
   content: "\f074";
 }
+
+/* line 528, _font-awesome.scss */
 
 .fa-comment:before {
   content: "\f075";
 }
 
+/* line 531, _font-awesome.scss */
+
 .fa-magnet:before {
   content: "\f076";
 }
+
+/* line 534, _font-awesome.scss */
 
 .fa-chevron-up:before {
   content: "\f077";
 }
 
+/* line 537, _font-awesome.scss */
+
 .fa-chevron-down:before {
   content: "\f078";
 }
+
+/* line 540, _font-awesome.scss */
 
 .fa-retweet:before {
   content: "\f079";
 }
 
+/* line 543, _font-awesome.scss */
+
 .fa-shopping-cart:before {
   content: "\f07a";
 }
+
+/* line 546, _font-awesome.scss */
 
 .fa-folder:before {
   content: "\f07b";
 }
 
+/* line 549, _font-awesome.scss */
+
 .fa-folder-open:before {
   content: "\f07c";
 }
+
+/* line 552, _font-awesome.scss */
 
 .fa-arrows-v:before {
   content: "\f07d";
 }
 
+/* line 555, _font-awesome.scss */
+
 .fa-arrows-h:before {
   content: "\f07e";
 }
+
+/* line 558, _font-awesome.scss */
 
 .fa-bar-chart-o:before {
   content: "\f080";
 }
 
+/* line 561, _font-awesome.scss */
+
 .fa-twitter-square:before {
   content: "\f081";
 }
+
+/* line 564, _font-awesome.scss */
 
 .fa-facebook-square:before {
   content: "\f082";
 }
 
+/* line 567, _font-awesome.scss */
+
 .fa-camera-retro:before {
   content: "\f083";
 }
 
+/* line 570, _font-awesome.scss */
+
 .fa-key:before {
   content: "\f084";
 }
+
+/* line 573, _font-awesome.scss */
 
 .fa-gears:before,
 .fa-cogs:before {
   content: "\f085";
 }
 
+/* line 577, _font-awesome.scss */
+
 .fa-comments:before {
   content: "\f086";
 }
+
+/* line 580, _font-awesome.scss */
 
 .fa-thumbs-o-up:before {
   content: "\f087";
 }
 
+/* line 583, _font-awesome.scss */
+
 .fa-thumbs-o-down:before {
   content: "\f088";
 }
+
+/* line 586, _font-awesome.scss */
 
 .fa-star-half:before {
   content: "\f089";
 }
 
+/* line 589, _font-awesome.scss */
+
 .fa-heart-o:before {
   content: "\f08a";
 }
+
+/* line 592, _font-awesome.scss */
 
 .fa-sign-out:before {
   content: "\f08b";
 }
 
+/* line 595, _font-awesome.scss */
+
 .fa-linkedin-square:before {
   content: "\f08c";
 }
+
+/* line 598, _font-awesome.scss */
 
 .fa-thumb-tack:before {
   content: "\f08d";
 }
 
+/* line 601, _font-awesome.scss */
+
 .fa-external-link:before {
   content: "\f08e";
 }
+
+/* line 604, _font-awesome.scss */
 
 .fa-sign-in:before {
   content: "\f090";
 }
 
+/* line 607, _font-awesome.scss */
+
 .fa-trophy:before {
   content: "\f091";
 }
+
+/* line 610, _font-awesome.scss */
 
 .fa-github-square:before {
   content: "\f092";
 }
 
+/* line 613, _font-awesome.scss */
+
 .fa-upload:before {
   content: "\f093";
 }
+
+/* line 616, _font-awesome.scss */
 
 .fa-lemon-o:before {
   content: "\f094";
 }
 
+/* line 619, _font-awesome.scss */
+
 .fa-phone:before {
   content: "\f095";
 }
+
+/* line 622, _font-awesome.scss */
 
 .fa-square-o:before {
   content: "\f096";
 }
 
+/* line 625, _font-awesome.scss */
+
 .fa-bookmark-o:before {
   content: "\f097";
 }
+
+/* line 628, _font-awesome.scss */
 
 .fa-phone-square:before {
   content: "\f098";
 }
 
+/* line 631, _font-awesome.scss */
+
 .fa-twitter:before {
   content: "\f099";
 }
+
+/* line 634, _font-awesome.scss */
 
 .fa-facebook:before {
   content: "\f09a";
 }
 
+/* line 637, _font-awesome.scss */
+
 .fa-github:before {
   content: "\f09b";
 }
+
+/* line 640, _font-awesome.scss */
 
 .fa-unlock:before {
   content: "\f09c";
 }
 
+/* line 643, _font-awesome.scss */
+
 .fa-credit-card:before {
   content: "\f09d";
 }
+
+/* line 646, _font-awesome.scss */
 
 .fa-rss:before {
   content: "\f09e";
 }
 
+/* line 649, _font-awesome.scss */
+
 .fa-hdd-o:before {
   content: "\f0a0";
 }
+
+/* line 652, _font-awesome.scss */
 
 .fa-bullhorn:before {
   content: "\f0a1";
 }
 
+/* line 655, _font-awesome.scss */
+
 .fa-bell:before {
   content: "\f0f3";
 }
+
+/* line 658, _font-awesome.scss */
 
 .fa-certificate:before {
   content: "\f0a3";
 }
 
+/* line 661, _font-awesome.scss */
+
 .fa-hand-o-right:before {
   content: "\f0a4";
 }
+
+/* line 664, _font-awesome.scss */
 
 .fa-hand-o-left:before {
   content: "\f0a5";
 }
 
+/* line 667, _font-awesome.scss */
+
 .fa-hand-o-up:before {
   content: "\f0a6";
 }
+
+/* line 670, _font-awesome.scss */
 
 .fa-hand-o-down:before {
   content: "\f0a7";
 }
 
+/* line 673, _font-awesome.scss */
+
 .fa-arrow-circle-left:before {
   content: "\f0a8";
 }
+
+/* line 676, _font-awesome.scss */
 
 .fa-arrow-circle-right:before {
   content: "\f0a9";
 }
 
+/* line 679, _font-awesome.scss */
+
 .fa-arrow-circle-up:before {
   content: "\f0aa";
 }
+
+/* line 682, _font-awesome.scss */
 
 .fa-arrow-circle-down:before {
   content: "\f0ab";
 }
 
+/* line 685, _font-awesome.scss */
+
 .fa-globe:before {
   content: "\f0ac";
 }
+
+/* line 688, _font-awesome.scss */
 
 .fa-wrench:before {
   content: "\f0ad";
 }
 
+/* line 691, _font-awesome.scss */
+
 .fa-tasks:before {
   content: "\f0ae";
 }
+
+/* line 694, _font-awesome.scss */
 
 .fa-filter:before {
   content: "\f0b0";
 }
 
+/* line 697, _font-awesome.scss */
+
 .fa-briefcase:before {
   content: "\f0b1";
 }
 
+/* line 700, _font-awesome.scss */
+
 .fa-arrows-alt:before {
   content: "\f0b2";
 }
+
+/* line 703, _font-awesome.scss */
 
 .fa-group:before,
 .fa-users:before {
   content: "\f0c0";
 }
 
+/* line 707, _font-awesome.scss */
+
 .fa-chain:before,
 .fa-link:before {
   content: "\f0c1";
 }
 
+/* line 711, _font-awesome.scss */
+
 .fa-cloud:before {
   content: "\f0c2";
 }
 
+/* line 714, _font-awesome.scss */
+
 .fa-flask:before {
   content: "\f0c3";
 }
+
+/* line 717, _font-awesome.scss */
 
 .fa-cut:before,
 .fa-scissors:before {
   content: "\f0c4";
 }
 
+/* line 721, _font-awesome.scss */
+
 .fa-copy:before,
 .fa-files-o:before {
   content: "\f0c5";
 }
 
+/* line 725, _font-awesome.scss */
+
 .fa-paperclip:before {
   content: "\f0c6";
 }
+
+/* line 728, _font-awesome.scss */
 
 .fa-save:before,
 .fa-floppy-o:before {
   content: "\f0c7";
 }
 
+/* line 732, _font-awesome.scss */
+
 .fa-square:before {
   content: "\f0c8";
 }
+
+/* line 735, _font-awesome.scss */
 
 .fa-bars:before {
   content: "\f0c9";
 }
 
+/* line 738, _font-awesome.scss */
+
 .fa-list-ul:before {
   content: "\f0ca";
 }
+
+/* line 741, _font-awesome.scss */
 
 .fa-list-ol:before {
   content: "\f0cb";
 }
 
+/* line 744, _font-awesome.scss */
+
 .fa-strikethrough:before {
   content: "\f0cc";
 }
+
+/* line 747, _font-awesome.scss */
 
 .fa-underline:before {
   content: "\f0cd";
 }
 
+/* line 750, _font-awesome.scss */
+
 .fa-table:before {
   content: "\f0ce";
 }
+
+/* line 753, _font-awesome.scss */
 
 .fa-magic:before {
   content: "\f0d0";
 }
 
+/* line 756, _font-awesome.scss */
+
 .fa-truck:before {
   content: "\f0d1";
 }
+
+/* line 759, _font-awesome.scss */
 
 .fa-pinterest:before {
   content: "\f0d2";
 }
 
+/* line 762, _font-awesome.scss */
+
 .fa-pinterest-square:before {
   content: "\f0d3";
 }
+
+/* line 765, _font-awesome.scss */
 
 .fa-google-plus-square:before {
   content: "\f0d4";
 }
 
+/* line 768, _font-awesome.scss */
+
 .fa-google-plus:before {
   content: "\f0d5";
 }
+
+/* line 771, _font-awesome.scss */
 
 .fa-money:before {
   content: "\f0d6";
 }
 
+/* line 774, _font-awesome.scss */
+
 .fa-caret-down:before {
   content: "\f0d7";
 }
+
+/* line 777, _font-awesome.scss */
 
 .fa-caret-up:before {
   content: "\f0d8";
 }
 
+/* line 780, _font-awesome.scss */
+
 .fa-caret-left:before {
   content: "\f0d9";
 }
+
+/* line 783, _font-awesome.scss */
 
 .fa-caret-right:before {
   content: "\f0da";
 }
 
+/* line 786, _font-awesome.scss */
+
 .fa-columns:before {
   content: "\f0db";
 }
+
+/* line 789, _font-awesome.scss */
 
 .fa-unsorted:before,
 .fa-sort:before {
   content: "\f0dc";
 }
 
+/* line 793, _font-awesome.scss */
+
 .fa-sort-down:before,
 .fa-sort-asc:before {
   content: "\f0dd";
 }
+
+/* line 797, _font-awesome.scss */
 
 .fa-sort-up:before,
 .fa-sort-desc:before {
   content: "\f0de";
 }
 
+/* line 801, _font-awesome.scss */
+
 .fa-envelope:before {
   content: "\f0e0";
 }
 
+/* line 804, _font-awesome.scss */
+
 .fa-linkedin:before {
   content: "\f0e1";
 }
+
+/* line 807, _font-awesome.scss */
 
 .fa-rotate-left:before,
 .fa-undo:before {
   content: "\f0e2";
 }
 
+/* line 811, _font-awesome.scss */
+
 .fa-legal:before,
 .fa-gavel:before {
   content: "\f0e3";
 }
+
+/* line 815, _font-awesome.scss */
 
 .fa-dashboard:before,
 .fa-tachometer:before {
   content: "\f0e4";
 }
 
+/* line 819, _font-awesome.scss */
+
 .fa-comment-o:before {
   content: "\f0e5";
 }
 
+/* line 822, _font-awesome.scss */
+
 .fa-comments-o:before {
   content: "\f0e6";
 }
+
+/* line 825, _font-awesome.scss */
 
 .fa-flash:before,
 .fa-bolt:before {
   content: "\f0e7";
 }
 
+/* line 829, _font-awesome.scss */
+
 .fa-sitemap:before {
   content: "\f0e8";
 }
 
+/* line 832, _font-awesome.scss */
+
 .fa-umbrella:before {
   content: "\f0e9";
 }
+
+/* line 835, _font-awesome.scss */
 
 .fa-paste:before,
 .fa-clipboard:before {
   content: "\f0ea";
 }
 
+/* line 839, _font-awesome.scss */
+
 .fa-lightbulb-o:before {
   content: "\f0eb";
 }
+
+/* line 842, _font-awesome.scss */
 
 .fa-exchange:before {
   content: "\f0ec";
 }
 
+/* line 845, _font-awesome.scss */
+
 .fa-cloud-download:before {
   content: "\f0ed";
 }
+
+/* line 848, _font-awesome.scss */
 
 .fa-cloud-upload:before {
   content: "\f0ee";
 }
 
+/* line 851, _font-awesome.scss */
+
 .fa-user-md:before {
   content: "\f0f0";
 }
+
+/* line 854, _font-awesome.scss */
 
 .fa-stethoscope:before {
   content: "\f0f1";
 }
 
+/* line 857, _font-awesome.scss */
+
 .fa-suitcase:before {
   content: "\f0f2";
 }
+
+/* line 860, _font-awesome.scss */
 
 .fa-bell-o:before {
   content: "\f0a2";
 }
 
+/* line 863, _font-awesome.scss */
+
 .fa-coffee:before {
   content: "\f0f4";
 }
+
+/* line 866, _font-awesome.scss */
 
 .fa-cutlery:before {
   content: "\f0f5";
 }
 
+/* line 869, _font-awesome.scss */
+
 .fa-file-text-o:before {
   content: "\f0f6";
 }
+
+/* line 872, _font-awesome.scss */
 
 .fa-building-o:before {
   content: "\f0f7";
 }
 
+/* line 875, _font-awesome.scss */
+
 .fa-hospital-o:before {
   content: "\f0f8";
 }
+
+/* line 878, _font-awesome.scss */
 
 .fa-ambulance:before {
   content: "\f0f9";
 }
 
+/* line 881, _font-awesome.scss */
+
 .fa-medkit:before {
   content: "\f0fa";
 }
+
+/* line 884, _font-awesome.scss */
 
 .fa-fighter-jet:before {
   content: "\f0fb";
 }
 
+/* line 887, _font-awesome.scss */
+
 .fa-beer:before {
   content: "\f0fc";
 }
+
+/* line 890, _font-awesome.scss */
 
 .fa-h-square:before {
   content: "\f0fd";
 }
 
+/* line 893, _font-awesome.scss */
+
 .fa-plus-square:before {
   content: "\f0fe";
 }
+
+/* line 896, _font-awesome.scss */
 
 .fa-angle-double-left:before {
   content: "\f100";
 }
 
+/* line 899, _font-awesome.scss */
+
 .fa-angle-double-right:before {
   content: "\f101";
 }
+
+/* line 902, _font-awesome.scss */
 
 .fa-angle-double-up:before {
   content: "\f102";
 }
 
+/* line 905, _font-awesome.scss */
+
 .fa-angle-double-down:before {
   content: "\f103";
 }
+
+/* line 908, _font-awesome.scss */
 
 .fa-angle-left:before {
   content: "\f104";
 }
 
+/* line 911, _font-awesome.scss */
+
 .fa-angle-right:before {
   content: "\f105";
 }
+
+/* line 914, _font-awesome.scss */
 
 .fa-angle-up:before {
   content: "\f106";
 }
 
+/* line 917, _font-awesome.scss */
+
 .fa-angle-down:before {
   content: "\f107";
 }
+
+/* line 920, _font-awesome.scss */
 
 .fa-desktop:before {
   content: "\f108";
 }
 
+/* line 923, _font-awesome.scss */
+
 .fa-laptop:before {
   content: "\f109";
 }
 
+/* line 926, _font-awesome.scss */
+
 .fa-tablet:before {
   content: "\f10a";
 }
+
+/* line 929, _font-awesome.scss */
 
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: "\f10b";
 }
 
+/* line 933, _font-awesome.scss */
+
 .fa-circle-o:before {
   content: "\f10c";
 }
+
+/* line 936, _font-awesome.scss */
 
 .fa-quote-left:before {
   content: "\f10d";
 }
 
+/* line 939, _font-awesome.scss */
+
 .fa-quote-right:before {
   content: "\f10e";
 }
+
+/* line 942, _font-awesome.scss */
 
 .fa-spinner:before {
   content: "\f110";
 }
 
+/* line 945, _font-awesome.scss */
+
 .fa-circle:before {
   content: "\f111";
 }
+
+/* line 948, _font-awesome.scss */
 
 .fa-mail-reply:before,
 .fa-reply:before {
   content: "\f112";
 }
 
+/* line 952, _font-awesome.scss */
+
 .fa-github-alt:before {
   content: "\f113";
 }
+
+/* line 955, _font-awesome.scss */
 
 .fa-folder-o:before {
   content: "\f114";
 }
 
+/* line 958, _font-awesome.scss */
+
 .fa-folder-open-o:before {
   content: "\f115";
 }
+
+/* line 961, _font-awesome.scss */
 
 .fa-smile-o:before {
   content: "\f118";
 }
 
+/* line 964, _font-awesome.scss */
+
 .fa-frown-o:before {
   content: "\f119";
 }
+
+/* line 967, _font-awesome.scss */
 
 .fa-meh-o:before {
   content: "\f11a";
 }
 
+/* line 970, _font-awesome.scss */
+
 .fa-gamepad:before {
   content: "\f11b";
 }
+
+/* line 973, _font-awesome.scss */
 
 .fa-keyboard-o:before {
   content: "\f11c";
 }
 
+/* line 976, _font-awesome.scss */
+
 .fa-flag-o:before {
   content: "\f11d";
 }
+
+/* line 979, _font-awesome.scss */
 
 .fa-flag-checkered:before {
   content: "\f11e";
 }
 
+/* line 982, _font-awesome.scss */
+
 .fa-terminal:before {
   content: "\f120";
 }
+
+/* line 985, _font-awesome.scss */
 
 .fa-code:before {
   content: "\f121";
 }
 
+/* line 988, _font-awesome.scss */
+
 .fa-reply-all:before {
   content: "\f122";
 }
 
+/* line 991, _font-awesome.scss */
+
 .fa-mail-reply-all:before {
   content: "\f122";
 }
+
+/* line 994, _font-awesome.scss */
 
 .fa-star-half-empty:before,
 .fa-star-half-full:before,
@@ -1972,205 +2692,303 @@ textarea {
   content: "\f123";
 }
 
+/* line 999, _font-awesome.scss */
+
 .fa-location-arrow:before {
   content: "\f124";
 }
+
+/* line 1002, _font-awesome.scss */
 
 .fa-crop:before {
   content: "\f125";
 }
 
+/* line 1005, _font-awesome.scss */
+
 .fa-code-fork:before {
   content: "\f126";
 }
+
+/* line 1008, _font-awesome.scss */
 
 .fa-unlink:before,
 .fa-chain-broken:before {
   content: "\f127";
 }
 
+/* line 1012, _font-awesome.scss */
+
 .fa-question:before {
   content: "\f128";
 }
+
+/* line 1015, _font-awesome.scss */
 
 .fa-info:before {
   content: "\f129";
 }
 
+/* line 1018, _font-awesome.scss */
+
 .fa-exclamation:before {
   content: "\f12a";
 }
+
+/* line 1021, _font-awesome.scss */
 
 .fa-superscript:before {
   content: "\f12b";
 }
 
+/* line 1024, _font-awesome.scss */
+
 .fa-subscript:before {
   content: "\f12c";
 }
+
+/* line 1027, _font-awesome.scss */
 
 .fa-eraser:before {
   content: "\f12d";
 }
 
+/* line 1030, _font-awesome.scss */
+
 .fa-puzzle-piece:before {
   content: "\f12e";
 }
+
+/* line 1033, _font-awesome.scss */
 
 .fa-microphone:before {
   content: "\f130";
 }
 
+/* line 1036, _font-awesome.scss */
+
 .fa-microphone-slash:before {
   content: "\f131";
 }
+
+/* line 1039, _font-awesome.scss */
 
 .fa-shield:before {
   content: "\f132";
 }
 
+/* line 1042, _font-awesome.scss */
+
 .fa-calendar-o:before {
   content: "\f133";
 }
+
+/* line 1045, _font-awesome.scss */
 
 .fa-fire-extinguisher:before {
   content: "\f134";
 }
 
+/* line 1048, _font-awesome.scss */
+
 .fa-rocket:before {
   content: "\f135";
 }
+
+/* line 1051, _font-awesome.scss */
 
 .fa-maxcdn:before {
   content: "\f136";
 }
 
+/* line 1054, _font-awesome.scss */
+
 .fa-chevron-circle-left:before {
   content: "\f137";
 }
+
+/* line 1057, _font-awesome.scss */
 
 .fa-chevron-circle-right:before {
   content: "\f138";
 }
 
+/* line 1060, _font-awesome.scss */
+
 .fa-chevron-circle-up:before {
   content: "\f139";
 }
+
+/* line 1063, _font-awesome.scss */
 
 .fa-chevron-circle-down:before,
 .next a:before {
   content: "\f13a";
 }
 
+/* line 1066, _font-awesome.scss */
+
 .fa-html5:before {
   content: "\f13b";
 }
+
+/* line 1069, _font-awesome.scss */
 
 .fa-css3:before {
   content: "\f13c";
 }
 
+/* line 1072, _font-awesome.scss */
+
 .fa-anchor:before {
   content: "\f13d";
 }
+
+/* line 1075, _font-awesome.scss */
 
 .fa-unlock-alt:before {
   content: "\f13e";
 }
 
+/* line 1078, _font-awesome.scss */
+
 .fa-bullseye:before {
   content: "\f140";
 }
+
+/* line 1081, _font-awesome.scss */
 
 .fa-ellipsis-h:before {
   content: "\f141";
 }
 
+/* line 1084, _font-awesome.scss */
+
 .fa-ellipsis-v:before {
   content: "\f142";
 }
+
+/* line 1087, _font-awesome.scss */
 
 .fa-rss-square:before {
   content: "\f143";
 }
 
+/* line 1090, _font-awesome.scss */
+
 .fa-play-circle:before {
   content: "\f144";
 }
+
+/* line 1093, _font-awesome.scss */
 
 .fa-ticket:before {
   content: "\f145";
 }
 
+/* line 1096, _font-awesome.scss */
+
 .fa-minus-square:before {
   content: "\f146";
 }
+
+/* line 1099, _font-awesome.scss */
 
 .fa-minus-square-o:before {
   content: "\f147";
 }
 
+/* line 1102, _font-awesome.scss */
+
 .fa-level-up:before {
   content: "\f148";
 }
+
+/* line 1105, _font-awesome.scss */
 
 .fa-level-down:before {
   content: "\f149";
 }
 
+/* line 1108, _font-awesome.scss */
+
 .fa-check-square:before {
   content: "\f14a";
 }
+
+/* line 1111, _font-awesome.scss */
 
 .fa-pencil-square:before {
   content: "\f14b";
 }
 
+/* line 1114, _font-awesome.scss */
+
 .fa-external-link-square:before {
   content: "\f14c";
 }
+
+/* line 1117, _font-awesome.scss */
 
 .fa-share-square:before {
   content: "\f14d";
 }
 
+/* line 1120, _font-awesome.scss */
+
 .fa-compass:before {
   content: "\f14e";
 }
+
+/* line 1123, _font-awesome.scss */
 
 .fa-toggle-down:before,
 .fa-caret-square-o-down:before {
   content: "\f150";
 }
 
+/* line 1127, _font-awesome.scss */
+
 .fa-toggle-up:before,
 .fa-caret-square-o-up:before {
   content: "\f151";
 }
+
+/* line 1131, _font-awesome.scss */
 
 .fa-toggle-right:before,
 .fa-caret-square-o-right:before {
   content: "\f152";
 }
 
+/* line 1135, _font-awesome.scss */
+
 .fa-euro:before,
 .fa-eur:before {
   content: "\f153";
 }
 
+/* line 1139, _font-awesome.scss */
+
 .fa-gbp:before {
   content: "\f154";
 }
+
+/* line 1142, _font-awesome.scss */
 
 .fa-dollar:before,
 .fa-usd:before {
   content: "\f155";
 }
 
+/* line 1146, _font-awesome.scss */
+
 .fa-rupee:before,
 .fa-inr:before {
   content: "\f156";
 }
+
+/* line 1150, _font-awesome.scss */
 
 .fa-cny:before,
 .fa-rmb:before,
@@ -2179,264 +2997,411 @@ textarea {
   content: "\f157";
 }
 
+/* line 1156, _font-awesome.scss */
+
 .fa-ruble:before,
 .fa-rouble:before,
 .fa-rub:before {
   content: "\f158";
 }
 
+/* line 1161, _font-awesome.scss */
+
 .fa-won:before,
 .fa-krw:before {
   content: "\f159";
 }
+
+/* line 1165, _font-awesome.scss */
 
 .fa-bitcoin:before,
 .fa-btc:before {
   content: "\f15a";
 }
 
+/* line 1169, _font-awesome.scss */
+
 .fa-file:before {
   content: "\f15b";
 }
+
+/* line 1172, _font-awesome.scss */
 
 .fa-file-text:before {
   content: "\f15c";
 }
 
+/* line 1175, _font-awesome.scss */
+
 .fa-sort-alpha-asc:before {
   content: "\f15d";
 }
+
+/* line 1178, _font-awesome.scss */
 
 .fa-sort-alpha-desc:before {
   content: "\f15e";
 }
 
+/* line 1181, _font-awesome.scss */
+
 .fa-sort-amount-asc:before {
   content: "\f160";
 }
+
+/* line 1184, _font-awesome.scss */
 
 .fa-sort-amount-desc:before {
   content: "\f161";
 }
 
+/* line 1187, _font-awesome.scss */
+
 .fa-sort-numeric-asc:before {
   content: "\f162";
 }
+
+/* line 1190, _font-awesome.scss */
 
 .fa-sort-numeric-desc:before {
   content: "\f163";
 }
 
+/* line 1193, _font-awesome.scss */
+
 .fa-thumbs-up:before {
   content: "\f164";
 }
+
+/* line 1196, _font-awesome.scss */
 
 .fa-thumbs-down:before {
   content: "\f165";
 }
 
+/* line 1199, _font-awesome.scss */
+
 .fa-youtube-square:before {
   content: "\f166";
 }
+
+/* line 1202, _font-awesome.scss */
 
 .fa-youtube:before {
   content: "\f167";
 }
 
+/* line 1205, _font-awesome.scss */
+
 .fa-xing:before {
   content: "\f168";
 }
+
+/* line 1208, _font-awesome.scss */
 
 .fa-xing-square:before {
   content: "\f169";
 }
 
+/* line 1211, _font-awesome.scss */
+
 .fa-youtube-play:before {
   content: "\f16a";
 }
+
+/* line 1214, _font-awesome.scss */
 
 .fa-dropbox:before {
   content: "\f16b";
 }
 
+/* line 1217, _font-awesome.scss */
+
 .fa-stack-overflow:before {
   content: "\f16c";
 }
+
+/* line 1220, _font-awesome.scss */
 
 .fa-instagram:before {
   content: "\f16d";
 }
 
+/* line 1223, _font-awesome.scss */
+
 .fa-flickr:before {
   content: "\f16e";
 }
+
+/* line 1226, _font-awesome.scss */
 
 .fa-adn:before {
   content: "\f170";
 }
 
+/* line 1229, _font-awesome.scss */
+
 .fa-bitbucket:before {
   content: "\f171";
 }
+
+/* line 1232, _font-awesome.scss */
 
 .fa-bitbucket-square:before {
   content: "\f172";
 }
 
+/* line 1235, _font-awesome.scss */
+
 .fa-tumblr:before {
   content: "\f173";
 }
+
+/* line 1238, _font-awesome.scss */
 
 .fa-tumblr-square:before {
   content: "\f174";
 }
 
+/* line 1241, _font-awesome.scss */
+
 .fa-long-arrow-down:before {
   content: "\f175";
 }
+
+/* line 1244, _font-awesome.scss */
 
 .fa-long-arrow-up:before {
   content: "\f176";
 }
 
+/* line 1247, _font-awesome.scss */
+
 .fa-long-arrow-left:before {
   content: "\f177";
 }
+
+/* line 1250, _font-awesome.scss */
 
 .fa-long-arrow-right:before {
   content: "\f178";
 }
 
+/* line 1253, _font-awesome.scss */
+
 .fa-apple:before {
   content: "\f179";
 }
+
+/* line 1256, _font-awesome.scss */
 
 .fa-windows:before {
   content: "\f17a";
 }
 
+/* line 1259, _font-awesome.scss */
+
 .fa-android:before {
   content: "\f17b";
 }
+
+/* line 1262, _font-awesome.scss */
 
 .fa-linux:before {
   content: "\f17c";
 }
 
+/* line 1265, _font-awesome.scss */
+
 .fa-dribbble:before {
   content: "\f17d";
 }
+
+/* line 1268, _font-awesome.scss */
 
 .fa-skype:before {
   content: "\f17e";
 }
 
+/* line 1271, _font-awesome.scss */
+
 .fa-foursquare:before {
   content: "\f180";
 }
+
+/* line 1274, _font-awesome.scss */
 
 .fa-trello:before {
   content: "\f181";
 }
 
+/* line 1277, _font-awesome.scss */
+
 .fa-female:before {
   content: "\f182";
 }
+
+/* line 1280, _font-awesome.scss */
 
 .fa-male:before {
   content: "\f183";
 }
 
+/* line 1283, _font-awesome.scss */
+
 .fa-gittip:before {
   content: "\f184";
 }
+
+/* line 1286, _font-awesome.scss */
 
 .fa-sun-o:before {
   content: "\f185";
 }
 
+/* line 1289, _font-awesome.scss */
+
 .fa-moon-o:before {
   content: "\f186";
 }
+
+/* line 1292, _font-awesome.scss */
 
 .fa-archive:before {
   content: "\f187";
 }
 
+/* line 1295, _font-awesome.scss */
+
 .fa-bug:before {
   content: "\f188";
 }
+
+/* line 1298, _font-awesome.scss */
 
 .fa-vk:before {
   content: "\f189";
 }
 
+/* line 1301, _font-awesome.scss */
+
 .fa-weibo:before {
   content: "\f18a";
 }
+
+/* line 1304, _font-awesome.scss */
 
 .fa-renren:before {
   content: "\f18b";
 }
 
+/* line 1307, _font-awesome.scss */
+
 .fa-pagelines:before {
   content: "\f18c";
 }
+
+/* line 1310, _font-awesome.scss */
 
 .fa-stack-exchange:before {
   content: "\f18d";
 }
 
+/* line 1313, _font-awesome.scss */
+
 .fa-arrow-circle-o-right:before {
   content: "\f18e";
 }
 
+/* line 1316, _font-awesome.scss */
+
 .fa-arrow-circle-o-left:before {
   content: "\f190";
 }
+
+/* line 1319, _font-awesome.scss */
 
 .fa-toggle-left:before,
 .fa-caret-square-o-left:before {
   content: "\f191";
 }
 
+/* line 1323, _font-awesome.scss */
+
 .fa-dot-circle-o:before {
   content: "\f192";
 }
+
+/* line 1326, _font-awesome.scss */
 
 .fa-wheelchair:before {
   content: "\f193";
 }
 
+/* line 1329, _font-awesome.scss */
+
 .fa-vimeo-square:before {
   content: "\f194";
 }
+
+/* line 1332, _font-awesome.scss */
 
 .fa-turkish-lira:before,
 .fa-try:before {
   content: "\f195";
 }
 
+/* line 1336, _font-awesome.scss */
+
 .fa-plus-square-o:before {
   content: "\f196";
 }
+
+/* line 1, _layout.scss */
 
 html[lang='he'] {
   direction: rtl;
 }
 
+/* line 5, _layout.scss */
+
 html {
-  background: black url(../img/dam4.jpg) no-repeat center center fixed;
+  background: black url(../img/bg/main-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
   font-size: 0.85em;
 }
 
 @media screen and (max-width: 1366px) {
+  /* line 5, _layout.scss */
+
   html {
     font-size: 0.7em;
   }
 }
+
+@media screen and (max-width: 1366px), screen and (max-height: 667px) {
+  /* line 25, _layout.scss */
+
+  #main p,
+  #main ul {
+    font-size: 1.5rem;
+  }
+
+  /* line 29, _layout.scss */
+
+  #main h2 {
+    font-size: 2rem;
+  }
+
+  /* line 35, _layout.scss */
+
+  .next a:before {
+    padding: 0 1px 2px 0;
+  }
+}
+
+/* line 41, _layout.scss */
 
 body {
   margin: 0 auto;
@@ -2444,20 +3409,28 @@ body {
   font-size: 16px;
 }
 
+/* line 47, _layout.scss */
+
 a {
   text-decoration: none;
   color: black;
 }
+
+/* line 51, _layout.scss */
 
 a:active,
 a:visited {
   color: black;
 }
 
+/* line 56, _layout.scss */
+
 i {
   display: inline-block;
   font-style: normal;
 }
+
+/* line 61, _layout.scss */
 
 h1,
 h2,
@@ -2469,23 +3442,33 @@ h6 {
   font-weight: normal;
 }
 
+/* line 76, _layout.scss */
+
 h2 {
   font-size: 1.55rem;
   font-weight: bold;
 }
 
+/* line 81, _layout.scss */
+
 h3 {
   font-size: 1.65em;
 }
+
+/* line 85, _layout.scss */
 
 h4 {
   font-size: 1.25em;
   font-family: Raleway;
 }
 
+/* line 90, _layout.scss */
+
 p {
   font-size: 1.4rem;
 }
+
+/* line 94, _layout.scss */
 
 ul {
   list-style: none;
@@ -2494,20 +3477,29 @@ ul {
   font-size: 1.3rem;
 }
 
+/* line 101, _layout.scss */
+
 table {
   width: 100%;
 }
+
+/* line 105, _layout.scss */
 
 .inner {
   margin: 0 auto;
   width: 95%;
   height: 100%;
   padding: 1rem;
+  position: relative;
 }
+
+/* line 116, _layout.scss */
 
 button.primary {
   padding: 1rem 3rem;
 }
+
+/* line 123, _layout.scss */
 
 .site-header {
   height: 6.25rem;
@@ -2518,24 +3510,31 @@ button.primary {
   left: 0;
   width: 100%;
   z-index: 10000;
-  overflow: hidden;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
+
+/* line 137, _layout.scss */
 
 .site-header * {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
+/* line 143, _layout.scss */
+
 .site-header a {
   color: white !important;
 }
+
+/* line 147, _layout.scss */
 
 .site-header h1 {
   float: left;
   font-size: 2rem;
 }
+
+/* line 153, _layout.scss */
 
 .site-header nav {
   width: 100%;
@@ -2543,16 +3542,22 @@ button.primary {
   text-align: center;
 }
 
+/* line 158, _layout.scss */
+
 .site-header nav > ul > li {
   display: inline-block;
   margin-right: -4px;
+  position: relative;
 }
 
+/* line 163, _layout.scss */
+
 .site-header nav > ul > li a {
-  height: 50px;
-  padding: 36px 24px;
+  padding: 32px 24px;
   line-height: 6.25rem;
 }
+
+/* line 168, _layout.scss */
 
 .site-header nav > ul > li a:hover {
   background: #2ecc71;
@@ -2560,21 +3565,70 @@ button.primary {
   transition: 0.5s all ease;
 }
 
+/* line 175, _layout.scss */
+
+.site-header nav > ul > li:hover > a {
+  background: #2ecc71;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+/* line 180, _layout.scss */
+
+.site-header nav > ul > li:hover .sub-list {
+  display: block;
+}
+
+/* line 185, _layout.scss */
+
+.site-header nav > ul > li .sub-list {
+  position: absolute;
+  width: 36rem;
+  top: 100%;
+  left: -13rem;
+  display: none;
+}
+
+/* line 192, _layout.scss */
+
+.site-header nav > ul > li .sub-list li {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 194, _layout.scss */
+
+.site-header nav > ul > li .sub-list li a {
+  padding: 5px 40px;
+  line-height: 50px;
+  display: block;
+}
+
+/* line 204, _layout.scss */
+
 .site-header .inner {
   padding: 0;
 }
+
+/* line 210, _layout.scss */
 
 .site-header.shrink {
   height: 3.125rem;
 }
 
+/* line 212, _layout.scss */
+
 .site-header.shrink h1 {
   font-size: 1rem;
 }
 
+/* line 216, _layout.scss */
+
 .site-header.shrink nav > ul > li a {
   line-height: 3.125rem;
+  padding: 0.9rem 24px;
 }
+
+/* line 223, _layout.scss */
 
 footer {
   background: white;
@@ -2582,29 +3636,39 @@ footer {
   font-size: 2rem;
 }
 
-section.about {
+/* line 229, _layout.scss */
+
+section#main {
   margin-top: 7.25rem;
 }
 
-section.about .summary {
+/* line 232, _layout.scss */
+
+section#main .summary {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 57.35098%;
-  background: rgba(255, 255, 255, 0.85);
+  width: 48.82117%;
+  background: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
 }
 
-section.about .summary:last-child {
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+section#main .summary:last-child {
   margin-right: 0;
 }
 
-section.about .summary ul {
+/* line 239, _layout.scss */
+
+section#main .summary ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
 
-section.about .media {
+/* line 245, _layout.scss */
+
+section#main .media {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -2615,11 +3679,15 @@ section.about .media {
   overflow: hidden;
 }
 
-section.about .media:last-child {
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+section#main .media:last-child {
   margin-right: 0;
 }
 
-section.about .solutions {
+/* line 261, _layout.scss */
+
+section#main .solutions {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -2628,11 +3696,15 @@ section.about .solutions {
   margin-top: 1rem;
 }
 
-section.about .solutions:last-child {
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+section#main .solutions:last-child {
   margin-right: 0;
 }
 
-section.about .solutions li {
+/* line 269, _layout.scss */
+
+section#main .solutions li {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -2640,11 +3712,15 @@ section.about .solutions li {
   width: 30%;
 }
 
-section.about .solutions li:last-child {
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+section#main .solutions li:last-child {
   margin-right: 0;
 }
 
-section.about .solutions li a {
+/* line 273, _layout.scss */
+
+section#main .solutions li a {
   margin-right: 5%;
   display: inline-block;
   height: 17rem;
@@ -2654,13 +3730,21 @@ section.about .solutions li a {
   width: 100%;
 }
 
+/* line 286, _layout.scss */
+
 .next {
   text-align: center;
   width: 100%;
   font-size: 4rem;
   margin: 1rem 0;
+  margin-left: -4rem;
   float: left;
+  position: fixed;
+  bottom: 1rem;
+  z-index: 10;
 }
+
+/* line 297, _layout.scss */
 
 .next a {
   display: inline-block;
@@ -2669,61 +3753,188 @@ section.about .solutions li a {
   color: white;
 }
 
-section:not(.about) {
-  background: #E7E7E7;
-  background: white;
+/* line 306, _layout.scss */
+
+.next a::before {
+  border-radius: 50%;
+  background: black;
+  height: 3.81rem;
+  width: 3.81rem;
+  display: block;
+}
+
+/* line 316, _layout.scss */
+
+section:not(#main) {
   border-bottom: 2px solid #E7E7E7;
 }
 
-section:not(.about) .bg {
-  background: white;
+/* line 319, _layout.scss */
+
+section:not(#main) .bg {
+  background: rgba(255, 255, 255, 0);
   height: 100%;
 }
+
+/* line 327, _layout.scss */
 
 .solution-types {
   background: white;
   min-height: 650px;
 }
 
+/* line 337, _layout.scss */
+
 .experience {
   background: lightblue;
 }
+
+/* line 341, _layout.scss */
+
+.about {
+  background: white url(../img/bg/about-bg.png) repeat center center;
+  color: #7e7e7e;
+}
+
+/* line 346, _layout.scss */
+
+.about h3,
+.about a,
+.about strong {
+  color: #e7e7e7;
+}
+
+/* line 350, _layout.scss */
+
+.about a {
+  text-decoration: underline;
+}
+
+/* line 2, _solutions.scss */
 
 .solution .solution-images {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  background: white;
+  width: 48.82117%;
   height: 100%;
   padding: 9rem 4rem 1rem;
 }
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
 
 .solution .solution-images:last-child {
   margin-right: 0;
 }
 
+/* line 7, _solutions.scss */
+
 .solution .solution-images ul > li {
   text-align: center;
 }
 
+/* line 9, _solutions.scss */
+
 .solution .solution-images ul > li img {
-  width: 100%;
   position: relative;
 }
 
-.solution .main {
+/* line 16, _solutions.scss */
+
+.solution .solution-content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
-  background: white;
-  height: 100%;
-  padding: 3rem 6rem 1rem;
+  width: 48.82117%;
+  margin-top: 3rem;
+  padding: 0 1rem 1rem;
   line-height: 3rem;
+  background: rgba(255, 255, 255, 0.55);
 }
 
-.solution .main:last-child {
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+.solution .solution-content:last-child {
+  margin-right: 0;
+}
+
+/* line 27, _solutions.scss */
+
+#groundwater-pollution-protecting {
+  background: white url(../img/bg/pollution-bg.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 34, _solutions.scss */
+
+#groundwater-pollution-protecting .solution-content {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* line 39, _solutions.scss */
+
+#groundwater-pollution-protecting .solution-images img {
+  width: 60%;
+}
+
+/* line 47, _solutions.scss */
+
+#earthen-dam {
+  background: white url(../img/bg/main-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 57, _solutions.scss */
+
+#optimization-of-remediation-strategies {
+  background: white url(../img/bg/remediation-strategies-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 65, _solutions.scss */
+
+#optimization-of-remediation-strategies .solution-images img {
+  width: 60%;
+}
+
+/* line 73, _solutions.scss */
+
+#heap-leach-mining {
+  background: white url(../img/bg/mining-bg.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 80, _solutions.scss */
+
+#heap-leach-mining .solution-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+#heap-leach-mining .solution-content:last-child {
+  margin-right: 0;
+}
+
+/* line 84, _solutions.scss */
+
+#heap-leach-mining .solution-images {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+#heap-leach-mining .solution-images:last-child {
   margin-right: 0;
 }
 
@@ -2735,6 +3946,8 @@ section:not(.about) .bg {
  * Image replacement
  */
 
+/* line 135, main.scss */
+
 .ir {
   background-color: transparent;
   border: 0;
@@ -2742,6 +3955,8 @@ section:not(.about) .bg {
   /* IE 6/7 fallback */
   *text-indent: -9999px;
 }
+
+/* line 143, main.scss */
 
 .ir:before {
   content: "";
@@ -2754,6 +3969,8 @@ section:not(.about) .bg {
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
+/* line 154, main.scss */
+
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -2762,6 +3979,8 @@ section:not(.about) .bg {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
+
+/* line 163, main.scss */
 
 .visuallyhidden {
   border: 0;
@@ -2779,6 +3998,8 @@ section:not(.about) .bg {
  * when navigated to via the keyboard: h5bp.com/p
  */
 
+/* line 179, main.scss */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2792,6 +4013,8 @@ section:not(.about) .bg {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
+
+/* line 193, main.scss */
 
 .invisible {
   visibility: hidden;
@@ -2809,36 +4032,40 @@ section:not(.about) .bg {
  *    `:before` to contain the top-margins of child elements.
  */
 
+/* line 209, main.scss */
+
 .clearfix:before,
 .inner:before,
 .site-header h1:before,
-section.about .summary:before,
-section.about .media:before,
-section.about .media ul:before,
-section.about .solutions:before,
-section:not(.about) .bg:before,
+section#main .summary:before,
+section#main .media:before,
+section#main .media ul:before,
+section#main .solutions:before,
+section:not(#main) .bg:before,
 .clearfix:after,
 .inner:after,
 .site-header h1:after,
-section.about .summary:after,
-section.about .media:after,
-section.about .media ul:after,
-section.about .solutions:after,
-section:not(.about) .bg:after {
+section#main .summary:after,
+section#main .media:after,
+section#main .media ul:after,
+section#main .solutions:after,
+section:not(#main) .bg:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
+/* line 215, main.scss */
+
 .clearfix:after,
 .inner:after,
 .site-header h1:after,
-section.about .summary:after,
-section.about .media:after,
-section.about .media ul:after,
-section.about .solutions:after,
-section:not(.about) .bg:after {
+section#main .summary:after,
+section#main .media:after,
+section#main .media ul:after,
+section#main .solutions:after,
+section:not(#main) .bg:after {
   clear: both;
 }
 
@@ -2847,14 +4074,16 @@ section:not(.about) .bg:after {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
+/* line 224, main.scss */
+
 .clearfix,
 .inner,
 .site-header h1,
-section.about .summary,
-section.about .media,
-section.about .media ul,
-section.about .solutions,
-section:not(.about) .bg {
+section#main .summary,
+section#main .media,
+section#main .media ul,
+section#main .solutions,
+section:not(#main) .bg {
   *zoom: 1;
 }
 
@@ -2878,6 +4107,8 @@ section:not(.about) .bg {
    ========================================================================== */
 
 @media print {
+  /* line 251, main.scss */
+
   * {
     background: transparent !important;
     color: #000 !important;
@@ -2887,14 +4118,20 @@ section:not(.about) .bg {
     text-shadow: none !important;
   }
 
+  /* line 258, main.scss */
+
   a,
   a:visited {
     text-decoration: underline;
   }
 
+  /* line 263, main.scss */
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
+  /* line 267, main.scss */
 
   abbr[title]:after {
     content: " (" attr(title) ")";
@@ -2904,11 +4141,15 @@ section:not(.about) .bg {
    * Don't show links for images, or javascript/internal links
    */
 
+  /* line 275, main.scss */
+
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
+
+  /* line 281, main.scss */
 
   pre,
   blockquote {
@@ -2916,15 +4157,21 @@ section:not(.about) .bg {
     page-break-inside: avoid;
   }
 
+  /* line 287, main.scss */
+
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
+  /* line 291, main.scss */
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
+  /* line 296, main.scss */
 
   img {
     max-width: 100% !important;
@@ -2934,12 +4181,16 @@ section:not(.about) .bg {
     margin: 0.5cm;
 }
 
+  /* line 304, main.scss */
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
+  /* line 311, main.scss */
 
   h2,
   h3 {

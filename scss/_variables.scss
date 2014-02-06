@@ -29,7 +29,6 @@ $light-blue: #02aef0;
 $light-blue-text: #7edbff;
 
 
-
 $box-shadow-color: #000;
 
 $positive-text-color: #419639;
@@ -57,6 +56,10 @@ $unread-datatable-row-bg-color: #fbfdf8;
 $footer-bg-color: #414040;
 
 
+// Media queries
+$small-width: "screen and (max-width: 1366px)";
+$small-height: "screen and (max-height: 667px)";
+
 /**
  * ========================
  * General classes
@@ -81,6 +84,10 @@ $footer-bg-color: #414040;
 
 .positive {
 	color: $positive-text-color;
+}
+
+.button {
+	cursor: pointer;
 }
 
 %fontAwesome {

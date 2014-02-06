@@ -1,0 +1,87 @@
+.solution {
+	.solution-images {
+		@include span-columns(6);
+		height: 100%;
+		padding: 9rem 4rem 1rem;
+
+		ul > li {
+			text-align: center;
+			img {
+				// width: 100%;
+				position: relative;
+			}
+		}
+	}
+
+	.solution-content {
+		@include span-columns(6);
+		margin-top: 3rem;
+		padding: 0 1rem 1rem;
+		line-height: 3rem;
+		background: rgba(255,255,255,0.55);
+	}
+}
+
+
+// solution #1
+#groundwater-pollution-protecting {
+	background: white url(../img/bg/pollution-bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	.solution-content {
+		background: rgba(255,255,255,0.55);
+	}
+
+	.solution-images {
+		img {
+			width: 60%;
+		}
+	}
+}
+
+
+// solution #2
+#earthen-dam {
+	background: white url(../img/bg/main-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+// solution #3
+#optimization-of-remediation-strategies {
+	background: white url(../img/bg/remediation-strategies-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	.solution-images {
+		img {
+			width: 60%;
+		}
+	}
+}
+
+
+// solution #4
+#heap-leach-mining {
+	background: white url(../img/bg/mining-bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	.solution-content {
+		@include span-columns(6);
+	}
+
+	.solution-images {
+		@include span-columns(6);
+	}
+}
