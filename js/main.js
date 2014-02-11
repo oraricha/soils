@@ -1,6 +1,7 @@
 $window = $(window);
 
 $(document).ready(function() {
+	var originalUrl = window.location.href;
 
 	// methods
 	var resizeHeader = function() {
@@ -36,9 +37,13 @@ $(document).ready(function() {
 		var href = e.target.href;
 		var target = href.indexOf("#");
 		target = href.substr(target);
+
 		$("html, body").animate({
 			scrollTop: $(target).offset().top + 1
 		}, 1500);
+
+		// make sure we updat the url for SEO parsing
+		window.location.href = href;
 	});
 
 	resizeHeader();

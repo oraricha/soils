@@ -142,6 +142,10 @@ button.primary {
 
 	a {
 		color: white !important;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	h1 {
