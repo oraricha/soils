@@ -342,7 +342,7 @@ section:not(#main) {
 	background: lightblue;
 }
 
-.about {
+.about, .contact {
 	background: white url(../img/bg/about-bg.png) repeat center center;
 
 	color: #7e7e7e;
@@ -353,5 +353,16 @@ section:not(#main) {
 
 	a {
 		text-decoration: underline;
+	}
+}
+
+.contact {
+	.content {
+		margin: 0 auto;
+		width: 50%;
+
+		h3 {
+			margin-bottom: 40px;
+		}
 	}
 }

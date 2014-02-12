@@ -226,12 +226,27 @@
 						%a{:href => "http://w3.bgu.ac.il/ziwr/faculty/dahan/cv.htm"} (Dr. Ofer Dahan's web page).
 
 
-	%section.about#about
+	%section.contact#contact
 		.bg
 			.inner
 				.content
-					%h3 Conteat us
-					
+					%h3 Contact us
+					%form.form-inline{:action => "sendMail.php"}
+						.data-row
+							%label.control-label{:for => "name"} Your name
+							%input(type="text" id="name" name="name" placeholder="Your name")
+						.data-row
+							%label.control-label{:for => "email"} Your Email
+							%input(type="text" id="email" name="email" placeholder="Your name")
+						.data-row
+							%label.control-label{:for => "subject"} Message subject
+							%textarea(id="subject" name="subject" placeholder="Subject")
+						.data-row
+							.spacer
+							%button.btn.btn-success.btn-lg.btn-block(type="submit" id="name" placeholder="Your name") Send
+						.data-row
+
+
 
 	/ %footer
 	/ 	© sensoils inc.

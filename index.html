@@ -282,11 +282,30 @@
       </div>
     </div>
   </section>
-  <section class='about' id='about'>
+  <section class='contact' id='contact'>
     <div class='bg'>
       <div class='inner'>
         <div class='content'>
-          <h3>Conteat us</h3>
+          <h3>Contact us</h3>
+          <form action='sendMail.php' class='form-inline'>
+            <div class='data-row'>
+              <label class='control-label' for='name'>Your name</label>
+              <input id='name' name='name' placeholder='Your name' type='text'>
+            </div>
+            <div class='data-row'>
+              <label class='control-label' for='email'>Your Email</label>
+              <input id='email' name='email' placeholder='Your name' type='text'>
+            </div>
+            <div class='data-row'>
+              <label class='control-label' for='subject'>Message subject</label>
+              <textarea id='subject' name='subject' placeholder='Subject'></textarea>
+            </div>
+            <div class='data-row'>
+              <div class='spacer'></div>
+              <button class='btn btn-success btn-lg btn-block' id='name' placeholder='Your name' type='submit'>Send</button>
+            </div>
+            <div class='data-row'></div>
+          </form>
         </div>
       </div>
     </div>

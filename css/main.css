@@ -5973,7 +5973,9 @@ output {
 
 /* line 114, bootstrap/_forms.scss */
 
-.form-control {
+.form-control,
+form .data-row input,
+form .data-row textarea {
   display: block;
   width: 100%;
   height: 34px;
@@ -5993,7 +5995,9 @@ output {
 
 /* line 904, bootstrap/_mixins.scss */
 
-.form-control:focus {
+.form-control:focus,
+form .data-row input:focus,
+form .data-row textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -6002,34 +6006,50 @@ output {
 
 /* line 57, bootstrap/_mixins.scss */
 
-.form-control:-moz-placeholder {
+.form-control:-moz-placeholder,
+form .data-row input:-moz-placeholder,
+form .data-row textarea:-moz-placeholder {
   color: #999999;
 }
 
 /* line 58, bootstrap/_mixins.scss */
 
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder,
+form .data-row input::-moz-placeholder,
+form .data-row textarea::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
 
 /* line 60, bootstrap/_mixins.scss */
 
-.form-control:-ms-input-placeholder {
+.form-control:-ms-input-placeholder,
+form .data-row input:-ms-input-placeholder,
+form .data-row textarea:-ms-input-placeholder {
   color: #999999;
 }
 
 /* line 61, bootstrap/_mixins.scss */
 
-.form-control::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder,
+form .data-row input::-webkit-input-placeholder,
+form .data-row textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
 /* line 139, bootstrap/_forms.scss */
 
 .form-control[disabled],
+form .data-row input[disabled],
+form .data-row textarea[disabled],
 .form-control[readonly],
-fieldset[disabled] .form-control {
+form .data-row input[readonly],
+form .data-row textarea[readonly],
+fieldset[disabled] .form-control,
+fieldset[disabled] form .data-row input,
+form .data-row fieldset[disabled] input,
+fieldset[disabled] form .data-row textarea,
+form .data-row fieldset[disabled] textarea {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
@@ -6037,7 +6057,8 @@ fieldset[disabled] .form-control {
 
 /* line 151, bootstrap/_forms.scss */
 
-textarea.form-control {
+textarea.form-control,
+form .data-row textarea {
   height: auto;
 }
 
@@ -6049,7 +6070,8 @@ input[type="date"] {
 
 /* line 169, bootstrap/_forms.scss */
 
-.form-group {
+.form-group,
+form .data-row {
   margin-bottom: 15px;
 }
 
@@ -6188,7 +6210,11 @@ select[multiple].input-lg {
 
 /* line 254, bootstrap/_forms.scss */
 
-.has-feedback .form-control {
+.has-feedback .form-control,
+.has-feedback form .data-row input,
+form .data-row .has-feedback input,
+.has-feedback form .data-row textarea,
+form .data-row .has-feedback textarea {
   padding-right: 42.5px;
 }
 
@@ -6218,7 +6244,11 @@ select[multiple].input-lg {
 
 /* line 868, bootstrap/_mixins.scss */
 
-.has-success .form-control {
+.has-success .form-control,
+.has-success form .data-row input,
+form .data-row .has-success input,
+.has-success form .data-row textarea,
+form .data-row .has-success textarea {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -6226,7 +6256,11 @@ select[multiple].input-lg {
 
 /* line 871, bootstrap/_mixins.scss */
 
-.has-success .form-control:focus {
+.has-success .form-control:focus,
+.has-success form .data-row input:focus,
+form .data-row .has-success input:focus,
+.has-success form .data-row textarea:focus,
+form .data-row .has-success textarea:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -6259,7 +6293,11 @@ select[multiple].input-lg {
 
 /* line 868, bootstrap/_mixins.scss */
 
-.has-warning .form-control {
+.has-warning .form-control,
+.has-warning form .data-row input,
+form .data-row .has-warning input,
+.has-warning form .data-row textarea,
+form .data-row .has-warning textarea {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -6267,7 +6305,11 @@ select[multiple].input-lg {
 
 /* line 871, bootstrap/_mixins.scss */
 
-.has-warning .form-control:focus {
+.has-warning .form-control:focus,
+.has-warning form .data-row input:focus,
+form .data-row .has-warning input:focus,
+.has-warning form .data-row textarea:focus,
+form .data-row .has-warning textarea:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -6300,7 +6342,11 @@ select[multiple].input-lg {
 
 /* line 868, bootstrap/_mixins.scss */
 
-.has-error .form-control {
+.has-error .form-control,
+.has-error form .data-row input,
+form .data-row .has-error input,
+.has-error form .data-row textarea,
+form .data-row .has-error textarea {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -6308,7 +6354,11 @@ select[multiple].input-lg {
 
 /* line 871, bootstrap/_mixins.scss */
 
-.has-error .form-control:focus {
+.has-error .form-control:focus,
+.has-error form .data-row input:focus,
+form .data-row .has-error input:focus,
+.has-error form .data-row textarea:focus,
+form .data-row .has-error textarea:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
@@ -6346,7 +6396,9 @@ select[multiple].input-lg {
 @media (min-width: 768px) {
   /* line 323, bootstrap/_forms.scss */
 
-  .form-inline .form-group {
+  .form-inline .form-group,
+  .form-inline form .data-row,
+  form .form-inline .data-row {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
@@ -6354,7 +6406,11 @@ select[multiple].input-lg {
 
   /* line 330, bootstrap/_forms.scss */
 
-  .form-inline .form-control {
+  .form-inline .form-control,
+  .form-inline form .data-row input,
+  form .data-row .form-inline input,
+  .form-inline form .data-row textarea,
+  form .data-row .form-inline textarea {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -6414,7 +6470,9 @@ select[multiple].input-lg {
 
 /* line 394, bootstrap/_forms.scss */
 
-.form-horizontal .form-group {
+.form-horizontal .form-group,
+.form-horizontal form .data-row,
+form .form-horizontal .data-row {
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -6422,14 +6480,20 @@ select[multiple].input-lg {
 /* line 20, bootstrap/_mixins.scss */
 
 .form-horizontal .form-group:before,
-.form-horizontal .form-group:after {
+.form-horizontal form .data-row:before,
+form .form-horizontal .data-row:before,
+.form-horizontal .form-group:after,
+.form-horizontal form .data-row:after,
+form .form-horizontal .data-row:after {
   content: " ";
   display: table;
 }
 
 /* line 25, bootstrap/_mixins.scss */
 
-.form-horizontal .form-group:after {
+.form-horizontal .form-group:after,
+.form-horizontal form .data-row:after,
+form .form-horizontal .data-row:after {
   clear: both;
 }
 
@@ -7022,6 +7086,1226 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("bootstrap/glyphicons-halflings-regular.eot");
+  src: url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+/* line 21, bootstrap/_glyphicons.scss */
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 34, bootstrap/_glyphicons.scss */
+
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+
+/* line 35, bootstrap/_glyphicons.scss */
+
+.glyphicon-plus:before {
+  content: "\2b";
+}
+
+/* line 36, bootstrap/_glyphicons.scss */
+
+.glyphicon-euro:before {
+  content: "\20ac";
+}
+
+/* line 37, bootstrap/_glyphicons.scss */
+
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+/* line 38, bootstrap/_glyphicons.scss */
+
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+
+/* line 39, bootstrap/_glyphicons.scss */
+
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+
+/* line 40, bootstrap/_glyphicons.scss */
+
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+
+/* line 41, bootstrap/_glyphicons.scss */
+
+.glyphicon-glass:before {
+  content: "\e001";
+}
+
+/* line 42, bootstrap/_glyphicons.scss */
+
+.glyphicon-music:before {
+  content: "\e002";
+}
+
+/* line 43, bootstrap/_glyphicons.scss */
+
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+/* line 44, bootstrap/_glyphicons.scss */
+
+.glyphicon-heart:before {
+  content: "\e005";
+}
+
+/* line 45, bootstrap/_glyphicons.scss */
+
+.glyphicon-star:before {
+  content: "\e006";
+}
+
+/* line 46, bootstrap/_glyphicons.scss */
+
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+
+/* line 47, bootstrap/_glyphicons.scss */
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+/* line 48, bootstrap/_glyphicons.scss */
+
+.glyphicon-film:before {
+  content: "\e009";
+}
+
+/* line 49, bootstrap/_glyphicons.scss */
+
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+/* line 50, bootstrap/_glyphicons.scss */
+
+.glyphicon-th:before {
+  content: "\e011";
+}
+
+/* line 51, bootstrap/_glyphicons.scss */
+
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+
+/* line 52, bootstrap/_glyphicons.scss */
+
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+/* line 53, bootstrap/_glyphicons.scss */
+
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+/* line 54, bootstrap/_glyphicons.scss */
+
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+
+/* line 55, bootstrap/_glyphicons.scss */
+
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+
+/* line 56, bootstrap/_glyphicons.scss */
+
+.glyphicon-off:before {
+  content: "\e017";
+}
+
+/* line 57, bootstrap/_glyphicons.scss */
+
+.glyphicon-signal:before {
+  content: "\e018";
+}
+
+/* line 58, bootstrap/_glyphicons.scss */
+
+.glyphicon-cog:before {
+  content: "\e019";
+}
+
+/* line 59, bootstrap/_glyphicons.scss */
+
+.glyphicon-trash:before {
+  content: "\e020";
+}
+
+/* line 60, bootstrap/_glyphicons.scss */
+
+.glyphicon-home:before {
+  content: "\e021";
+}
+
+/* line 61, bootstrap/_glyphicons.scss */
+
+.glyphicon-file:before {
+  content: "\e022";
+}
+
+/* line 62, bootstrap/_glyphicons.scss */
+
+.glyphicon-time:before {
+  content: "\e023";
+}
+
+/* line 63, bootstrap/_glyphicons.scss */
+
+.glyphicon-road:before {
+  content: "\e024";
+}
+
+/* line 64, bootstrap/_glyphicons.scss */
+
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+
+/* line 65, bootstrap/_glyphicons.scss */
+
+.glyphicon-download:before {
+  content: "\e026";
+}
+
+/* line 66, bootstrap/_glyphicons.scss */
+
+.glyphicon-upload:before {
+  content: "\e027";
+}
+
+/* line 67, bootstrap/_glyphicons.scss */
+
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+
+/* line 68, bootstrap/_glyphicons.scss */
+
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+/* line 69, bootstrap/_glyphicons.scss */
+
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+
+/* line 70, bootstrap/_glyphicons.scss */
+
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+
+/* line 71, bootstrap/_glyphicons.scss */
+
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+
+/* line 72, bootstrap/_glyphicons.scss */
+
+.glyphicon-lock:before {
+  content: "\e033";
+}
+
+/* line 73, bootstrap/_glyphicons.scss */
+
+.glyphicon-flag:before {
+  content: "\e034";
+}
+
+/* line 74, bootstrap/_glyphicons.scss */
+
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+
+/* line 75, bootstrap/_glyphicons.scss */
+
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+
+/* line 76, bootstrap/_glyphicons.scss */
+
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+
+/* line 77, bootstrap/_glyphicons.scss */
+
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+
+/* line 78, bootstrap/_glyphicons.scss */
+
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+
+/* line 79, bootstrap/_glyphicons.scss */
+
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+
+/* line 80, bootstrap/_glyphicons.scss */
+
+.glyphicon-tag:before {
+  content: "\e041";
+}
+
+/* line 81, bootstrap/_glyphicons.scss */
+
+.glyphicon-tags:before {
+  content: "\e042";
+}
+
+/* line 82, bootstrap/_glyphicons.scss */
+
+.glyphicon-book:before {
+  content: "\e043";
+}
+
+/* line 83, bootstrap/_glyphicons.scss */
+
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+
+/* line 84, bootstrap/_glyphicons.scss */
+
+.glyphicon-print:before {
+  content: "\e045";
+}
+
+/* line 85, bootstrap/_glyphicons.scss */
+
+.glyphicon-camera:before {
+  content: "\e046";
+}
+
+/* line 86, bootstrap/_glyphicons.scss */
+
+.glyphicon-font:before {
+  content: "\e047";
+}
+
+/* line 87, bootstrap/_glyphicons.scss */
+
+.glyphicon-bold:before {
+  content: "\e048";
+}
+
+/* line 88, bootstrap/_glyphicons.scss */
+
+.glyphicon-italic:before {
+  content: "\e049";
+}
+
+/* line 89, bootstrap/_glyphicons.scss */
+
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+
+/* line 90, bootstrap/_glyphicons.scss */
+
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+
+/* line 91, bootstrap/_glyphicons.scss */
+
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+
+/* line 92, bootstrap/_glyphicons.scss */
+
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+
+/* line 93, bootstrap/_glyphicons.scss */
+
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+
+/* line 94, bootstrap/_glyphicons.scss */
+
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+/* line 95, bootstrap/_glyphicons.scss */
+
+.glyphicon-list:before {
+  content: "\e056";
+}
+
+/* line 96, bootstrap/_glyphicons.scss */
+
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+
+/* line 97, bootstrap/_glyphicons.scss */
+
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+
+/* line 98, bootstrap/_glyphicons.scss */
+
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+
+/* line 99, bootstrap/_glyphicons.scss */
+
+.glyphicon-picture:before {
+  content: "\e060";
+}
+
+/* line 100, bootstrap/_glyphicons.scss */
+
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+
+/* line 101, bootstrap/_glyphicons.scss */
+
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+
+/* line 102, bootstrap/_glyphicons.scss */
+
+.glyphicon-tint:before {
+  content: "\e064";
+}
+
+/* line 103, bootstrap/_glyphicons.scss */
+
+.glyphicon-edit:before {
+  content: "\e065";
+}
+
+/* line 104, bootstrap/_glyphicons.scss */
+
+.glyphicon-share:before {
+  content: "\e066";
+}
+
+/* line 105, bootstrap/_glyphicons.scss */
+
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+/* line 106, bootstrap/_glyphicons.scss */
+
+.glyphicon-move:before {
+  content: "\e068";
+}
+
+/* line 107, bootstrap/_glyphicons.scss */
+
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+
+/* line 108, bootstrap/_glyphicons.scss */
+
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+
+/* line 109, bootstrap/_glyphicons.scss */
+
+.glyphicon-backward:before {
+  content: "\e071";
+}
+
+/* line 110, bootstrap/_glyphicons.scss */
+
+.glyphicon-play:before {
+  content: "\e072";
+}
+
+/* line 111, bootstrap/_glyphicons.scss */
+
+.glyphicon-pause:before {
+  content: "\e073";
+}
+
+/* line 112, bootstrap/_glyphicons.scss */
+
+.glyphicon-stop:before {
+  content: "\e074";
+}
+
+/* line 113, bootstrap/_glyphicons.scss */
+
+.glyphicon-forward:before {
+  content: "\e075";
+}
+
+/* line 114, bootstrap/_glyphicons.scss */
+
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+
+/* line 115, bootstrap/_glyphicons.scss */
+
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+
+/* line 116, bootstrap/_glyphicons.scss */
+
+.glyphicon-eject:before {
+  content: "\e078";
+}
+
+/* line 117, bootstrap/_glyphicons.scss */
+
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
+/* line 118, bootstrap/_glyphicons.scss */
+
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+/* line 119, bootstrap/_glyphicons.scss */
+
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+
+/* line 120, bootstrap/_glyphicons.scss */
+
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+
+/* line 121, bootstrap/_glyphicons.scss */
+
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+/* line 122, bootstrap/_glyphicons.scss */
+
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+
+/* line 123, bootstrap/_glyphicons.scss */
+
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+
+/* line 124, bootstrap/_glyphicons.scss */
+
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+
+/* line 125, bootstrap/_glyphicons.scss */
+
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+
+/* line 126, bootstrap/_glyphicons.scss */
+
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+/* line 127, bootstrap/_glyphicons.scss */
+
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+
+/* line 128, bootstrap/_glyphicons.scss */
+
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+
+/* line 129, bootstrap/_glyphicons.scss */
+
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+
+/* line 130, bootstrap/_glyphicons.scss */
+
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+
+/* line 131, bootstrap/_glyphicons.scss */
+
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+
+/* line 132, bootstrap/_glyphicons.scss */
+
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+/* line 133, bootstrap/_glyphicons.scss */
+
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+
+/* line 134, bootstrap/_glyphicons.scss */
+
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+
+/* line 135, bootstrap/_glyphicons.scss */
+
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+
+/* line 136, bootstrap/_glyphicons.scss */
+
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+
+/* line 137, bootstrap/_glyphicons.scss */
+
+.glyphicon-gift:before {
+  content: "\e102";
+}
+
+/* line 138, bootstrap/_glyphicons.scss */
+
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+
+/* line 139, bootstrap/_glyphicons.scss */
+
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+/* line 140, bootstrap/_glyphicons.scss */
+
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+/* line 141, bootstrap/_glyphicons.scss */
+
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+
+/* line 142, bootstrap/_glyphicons.scss */
+
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+
+/* line 143, bootstrap/_glyphicons.scss */
+
+.glyphicon-plane:before {
+  content: "\e108";
+}
+
+/* line 144, bootstrap/_glyphicons.scss */
+
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+
+/* line 145, bootstrap/_glyphicons.scss */
+
+.glyphicon-random:before {
+  content: "\e110";
+}
+
+/* line 146, bootstrap/_glyphicons.scss */
+
+.glyphicon-comment:before {
+  content: "\e111";
+}
+
+/* line 147, bootstrap/_glyphicons.scss */
+
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+
+/* line 148, bootstrap/_glyphicons.scss */
+
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+
+/* line 149, bootstrap/_glyphicons.scss */
+
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+/* line 150, bootstrap/_glyphicons.scss */
+
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+
+/* line 151, bootstrap/_glyphicons.scss */
+
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+
+/* line 152, bootstrap/_glyphicons.scss */
+
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+
+/* line 153, bootstrap/_glyphicons.scss */
+
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+
+/* line 154, bootstrap/_glyphicons.scss */
+
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+
+/* line 155, bootstrap/_glyphicons.scss */
+
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+
+/* line 156, bootstrap/_glyphicons.scss */
+
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+
+/* line 157, bootstrap/_glyphicons.scss */
+
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+
+/* line 158, bootstrap/_glyphicons.scss */
+
+.glyphicon-bell:before {
+  content: "\e123";
+}
+
+/* line 159, bootstrap/_glyphicons.scss */
+
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+
+/* line 160, bootstrap/_glyphicons.scss */
+
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+
+/* line 161, bootstrap/_glyphicons.scss */
+
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+
+/* line 162, bootstrap/_glyphicons.scss */
+
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+
+/* line 163, bootstrap/_glyphicons.scss */
+
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+
+/* line 164, bootstrap/_glyphicons.scss */
+
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+
+/* line 165, bootstrap/_glyphicons.scss */
+
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+
+/* line 166, bootstrap/_glyphicons.scss */
+
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+
+/* line 167, bootstrap/_glyphicons.scss */
+
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+
+/* line 168, bootstrap/_glyphicons.scss */
+
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+
+/* line 169, bootstrap/_glyphicons.scss */
+
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+
+/* line 170, bootstrap/_glyphicons.scss */
+
+.glyphicon-globe:before {
+  content: "\e135";
+}
+
+/* line 171, bootstrap/_glyphicons.scss */
+
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+
+/* line 172, bootstrap/_glyphicons.scss */
+
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+
+/* line 173, bootstrap/_glyphicons.scss */
+
+.glyphicon-filter:before {
+  content: "\e138";
+}
+
+/* line 174, bootstrap/_glyphicons.scss */
+
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+
+/* line 175, bootstrap/_glyphicons.scss */
+
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+
+/* line 176, bootstrap/_glyphicons.scss */
+
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+
+/* line 177, bootstrap/_glyphicons.scss */
+
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+
+/* line 178, bootstrap/_glyphicons.scss */
+
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+
+/* line 179, bootstrap/_glyphicons.scss */
+
+.glyphicon-link:before {
+  content: "\e144";
+}
+
+/* line 180, bootstrap/_glyphicons.scss */
+
+.glyphicon-phone:before {
+  content: "\e145";
+}
+
+/* line 181, bootstrap/_glyphicons.scss */
+
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+
+/* line 182, bootstrap/_glyphicons.scss */
+
+.glyphicon-usd:before {
+  content: "\e148";
+}
+
+/* line 183, bootstrap/_glyphicons.scss */
+
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+
+/* line 184, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort:before {
+  content: "\e150";
+}
+
+/* line 185, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+
+/* line 186, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+
+/* line 187, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+
+/* line 188, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+
+/* line 189, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+
+/* line 190, bootstrap/_glyphicons.scss */
+
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+
+/* line 191, bootstrap/_glyphicons.scss */
+
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+
+/* line 192, bootstrap/_glyphicons.scss */
+
+.glyphicon-expand:before {
+  content: "\e158";
+}
+
+/* line 193, bootstrap/_glyphicons.scss */
+
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+
+/* line 194, bootstrap/_glyphicons.scss */
+
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+
+/* line 195, bootstrap/_glyphicons.scss */
+
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+/* line 196, bootstrap/_glyphicons.scss */
+
+.glyphicon-flash:before {
+  content: "\e162";
+}
+
+/* line 197, bootstrap/_glyphicons.scss */
+
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+
+/* line 198, bootstrap/_glyphicons.scss */
+
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+
+/* line 199, bootstrap/_glyphicons.scss */
+
+.glyphicon-record:before {
+  content: "\e165";
+}
+
+/* line 200, bootstrap/_glyphicons.scss */
+
+.glyphicon-save:before {
+  content: "\e166";
+}
+
+/* line 201, bootstrap/_glyphicons.scss */
+
+.glyphicon-open:before {
+  content: "\e167";
+}
+
+/* line 202, bootstrap/_glyphicons.scss */
+
+.glyphicon-saved:before {
+  content: "\e168";
+}
+
+/* line 203, bootstrap/_glyphicons.scss */
+
+.glyphicon-import:before {
+  content: "\e169";
+}
+
+/* line 204, bootstrap/_glyphicons.scss */
+
+.glyphicon-export:before {
+  content: "\e170";
+}
+
+/* line 205, bootstrap/_glyphicons.scss */
+
+.glyphicon-send:before {
+  content: "\e171";
+}
+
+/* line 206, bootstrap/_glyphicons.scss */
+
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+
+/* line 207, bootstrap/_glyphicons.scss */
+
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+
+/* line 208, bootstrap/_glyphicons.scss */
+
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+
+/* line 209, bootstrap/_glyphicons.scss */
+
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+
+/* line 210, bootstrap/_glyphicons.scss */
+
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+
+/* line 211, bootstrap/_glyphicons.scss */
+
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+
+/* line 212, bootstrap/_glyphicons.scss */
+
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+
+/* line 213, bootstrap/_glyphicons.scss */
+
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+
+/* line 214, bootstrap/_glyphicons.scss */
+
+.glyphicon-header:before {
+  content: "\e180";
+}
+
+/* line 215, bootstrap/_glyphicons.scss */
+
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+
+/* line 216, bootstrap/_glyphicons.scss */
+
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+
+/* line 217, bootstrap/_glyphicons.scss */
+
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+
+/* line 218, bootstrap/_glyphicons.scss */
+
+.glyphicon-tower:before {
+  content: "\e184";
+}
+
+/* line 219, bootstrap/_glyphicons.scss */
+
+.glyphicon-stats:before {
+  content: "\e185";
+}
+
+/* line 220, bootstrap/_glyphicons.scss */
+
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+
+/* line 221, bootstrap/_glyphicons.scss */
+
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+
+/* line 222, bootstrap/_glyphicons.scss */
+
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+
+/* line 223, bootstrap/_glyphicons.scss */
+
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+
+/* line 224, bootstrap/_glyphicons.scss */
+
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+
+/* line 225, bootstrap/_glyphicons.scss */
+
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+
+/* line 226, bootstrap/_glyphicons.scss */
+
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+
+/* line 227, bootstrap/_glyphicons.scss */
+
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+
+/* line 228, bootstrap/_glyphicons.scss */
+
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+/* line 229, bootstrap/_glyphicons.scss */
+
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+
+/* line 230, bootstrap/_glyphicons.scss */
+
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+
+/* line 231, bootstrap/_glyphicons.scss */
+
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+
+/* line 232, bootstrap/_glyphicons.scss */
+
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+
+/* line 233, bootstrap/_glyphicons.scss */
+
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+
 /* line 1, _layout.scss */
 
 html[lang='he'] {
@@ -7462,7 +8746,8 @@ section:not(#main) .bg {
 
 /* line 345, _layout.scss */
 
-.about {
+.about,
+.contact {
   background: white url(../img/bg/about-bg.png) repeat center center;
   color: #7e7e7e;
 }
@@ -7471,14 +8756,31 @@ section:not(#main) .bg {
 
 .about h3,
 .about a,
-.about strong {
+.about strong,
+.contact h3,
+.contact a,
+.contact strong {
   color: #e7e7e7;
 }
 
 /* line 354, _layout.scss */
 
-.about a {
+.about a,
+.contact a {
   text-decoration: underline;
+}
+
+/* line 360, _layout.scss */
+
+.contact .content {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* line 364, _layout.scss */
+
+.contact .content h3 {
+  margin-bottom: 40px;
 }
 
 /* line 2, _solutions.scss */
@@ -7606,6 +8908,97 @@ section:not(#main) .bg {
 /* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
 
 #heap-leach-mining .solution-images:last-child {
+  margin-right: 0;
+}
+
+/* line 3, _form.scss */
+
+form .data-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+form .data-row:last-child {
+  margin-right: 0;
+}
+
+/* line 8, _form.scss */
+
+form .data-row label,
+form .data-row .spacer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  min-height: 1px;
+}
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+form .data-row label:last-child,
+form .data-row .spacer:last-child {
+  margin-right: 0;
+}
+
+/* line 13, _form.scss */
+
+form .data-row input,
+form .data-row textarea {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+form .data-row input:last-child,
+form .data-row textarea:last-child {
+  margin-right: 0;
+}
+
+/* line 17, _form.scss */
+
+form .data-row input.error,
+form .data-row textarea.error {
+  color: #a94442;
+  background: pink;
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* line 23, _form.scss */
+
+form .data-row input.error:focus,
+form .data-row textarea.error:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+
+/* line 31, _form.scss */
+
+form .data-row textarea {
+  min-height: 200px;
+}
+
+/* line 35, _form.scss */
+
+form .data-row button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+
+/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+
+form .data-row button:last-child {
   margin-right: 0;
 }
 
