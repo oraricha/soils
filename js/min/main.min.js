@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 	var setSectionHeight = function() {
 		var viewportHeight = $window.height();
-		var sections = $("body section");
+		var sections = $("body section").not("#experience, #about");
 		sections.each(function(index, element) {
 			element = $(element);
 			if (element.height() < viewportHeight) {
@@ -22,25 +22,22 @@ $(document).ready(function() {
 		});
 	};
 
-	var setSliderHeight = function () {
-		var slider = $(".about .slider");
-		var summary = $(".summary");
-		slider.height(summary.height() + 10 + "px");
-	};
-
 	// logic
 	setSectionHeight();
-	setSliderHeight();
 
-	$(".next a, .site-header a").click(function(e) {
-		e.preventDefault();
-		e.stopPropagation();
+	$(".next a, .site-header a, .more").click(function(e) {
 		var href = e.target.href;
 		var target = href.indexOf("#");
 		target = href.substr(target);
 
+		if (target === "#") { return; }
+		e.preventDefault();
+		e.stopPropagation();
+
+		var scrollTo = $(target).offset().top + 1;
+
 		$("html, body").animate({
-			scrollTop: $(target).offset().top + 1
+			scrollTop: scrollTo
 		}, 1500);
 
 		// make sure we updat the url for SEO parsing
@@ -51,7 +48,6 @@ $(document).ready(function() {
 
 	$window.resize(function() {
 		setSectionHeight();
-		setSliderHeight();
 	});
 
 	var formActions = (function() {

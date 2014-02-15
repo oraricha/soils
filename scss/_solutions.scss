@@ -15,10 +15,11 @@
 
 	.solution-content {
 		@include span-columns(6);
+		margin-right: 0;
 		margin-top: 3rem;
 		padding: 0 1rem 1rem;
-		line-height: 3rem;
-		background: rgba(255,255,255,0.55);
+		line-height: 2.5rem;
+		background: rgba(255,255,255,0.75);
 	}
 }
 
@@ -30,10 +31,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-	.solution-content {
-		background: rgba(255,255,255,0.55);
-	}
 
 	.solution-images {
 		img {
@@ -63,7 +60,7 @@
 
 	.solution-images {
 		img {
-			width: 60%;
+			width: 80%;
 		}
 	}
 }
@@ -71,17 +68,9 @@
 
 // solution #4
 #heap-leach-mining {
-	background: white url(../img/bg/mining-bg.png) no-repeat center center;
+	background: white url(../img/bg/mining-bg.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-	.solution-content {
-		@include span-columns(6);
-	}
-
-	.solution-images {
-		@include span-columns(6);
-	}
 }

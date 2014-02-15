@@ -29,7 +29,7 @@
 					%li
 						%a.button{:href => "#"} Home
 					%li
-						%a.button Solutions
+						%a.button{:href => "#groundwater-pollution-protecting"} Solutions
 						%ul.sub-list
 							%li
 								%a.button{:href => "#groundwater-pollution-protecting"} Groundwater protecting from pollution hazard
@@ -40,18 +40,19 @@
 							%li
 								%a.button{:href => "#heap-leach-mining"} Heap-leach mining
 					%li
-						%a.button Experience
+						%a.button{:href => "#experience"} Experience
 					%li
 						%a.button{:href => "#about"} About us
 					%li
-						%a.button{:href => "#"} Contact us
+						%a.button{:href => "#contact"} Contact us
+
 	%section.main#main
 		.inner
 			.summary
 				%h2
 					Real time detection of water flow and contaminants transport in the subsurface
 				%p
-					Sensoil's Vadose zone Monitoring System (VMSTM) are specially designed for a wide range of environmental and industrial applications including:
+					Sensoil's Vadose zone Monitoring System (VMS) are specially designed for a wide range of environmental and industrial applications including:
 				%ul
 					%li Protection of <strong class="bold">groundwater</strong> resources from pollution hazard
 					%li Optimization of subsurface <strong class="bold">remediation</strong>
@@ -61,40 +62,8 @@
 					%li <strong class="bold">Land-fill</strong> waste management
 				%p
 					<strong class="bold">Sensoil</strong> advanced vadose-zone monitoring system is currently the only technology available for real time detection of water flow and contaminants transport in deep unsaturated sediment.
-			/ .media.slider
-			/ 	%ul
-			/ 		%li
-			/ 			%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			/ 		%li
-			/ 			%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			/ 		%li
-			/ 			%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			/ 		%li
-			/ 			%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			/ 		%li
-			/ 			%img{:src => "http://lorempixel.com/520/400/city", :alt => "random image"}
-			/ .solutions#solutions
-			/ 	%ul 
-			/ 		%li
-			/ 			%a{:href => ""} סכרים
-			/ 		%li
-			/ 			%a{:href => ""} מכרות
-			/ 		%li
-			/ 			%a{:href => ""} זיהום ושיקום קרקע
 			.next
 				%a{:href => "#groundwater-pollution-protecting"}
-
-	/ %section.solution-types#solution-types
-	/ 	.inner
-	/ 		%ul
-	/ 			%li
-	/ 				%img{:src => "#", :alt => ""}
-	/ 			%li
-	/ 				%img{:src => "#", :alt => ""}
-	/ 			%li
-	/ 				%img{:src => "#", :alt => ""}
-	/ %section.experience
-	/ 	.inner
 
 	%section.solution#groundwater-pollution-protecting
 		.bg
@@ -114,13 +83,14 @@
 						%strong "early warning" 
 						on contamination processes 
 						in the vadose zone long before aquifer contamination turns evident.
-					%button{:type => "button", :class => "primary"} Read More
+					%a.button.default.more{:href => "#experience"} Read More
 				.solution-images
 					%ul 
 						%li 
 							%img{:src => "img/pollution.png", :alt => "Groundwater protecting from pollution hazard"}
-						%li 
-						%li 
+				.next
+					%a{:href => "#earthen-dam"}
+
 	%section.solution#earthen-dam
 		.bg
 			.inner
@@ -135,19 +105,20 @@
 						%strong Sensoil 
 						monitoring technology in earthen dams provides 
 						%strong Real time 
-						continuous information on the dam moisture. 
-						Detailed analysis data obtained by the 
+						continuous information on the dam sediment moisture. 
+						Detailed analysis moisture data obtained by the 
 						%strong VMS 
-						is used to provide 
+						across the dam is used to provide 
 						%strong early warning 
 						on potential weakening of the dam stability.
-					%button{:type => "button", :class => "primary"} Read More
+					%a.button.default.more{:href => "#experience"} Read More
 				.solution-images
 					%ul 
 						%li 
 							%img{:src => "img/dam-stability.png", :alt => "Earthen dam stability"}
-						%li 
-						%li 
+				.next
+					%a{:href => "#optimization-of-remediation-strategies"}
+
 	%section.solution#optimization-of-remediation-strategies
 		.bg
 			.inner
@@ -168,13 +139,14 @@
 						monitoring technology provides unique tools of proper 
 						%strong management 
 						of remediated sites.
-					%button{:type => "button", :class => "primary"} Read More
+					%a.button.default.more{:href => "#experience"} Read More
 				.solution-images
 					%ul 
 						%li 
 							%img{:src => "img/optimization.png", :alt => "Optimization of Remediation Strategies"}
-						%li 
-						%li 
+				.next
+					%a{:href => "#heap-leach-mining"}
+
 	%section.solution#heap-leach-mining
 		.bg
 			.inner
@@ -182,11 +154,11 @@
 					%h3 Heap-leach mining
 					%p 
 						%strong Heap leaching mining typically involve leaching of 
-						crushed ore with diluted acid or cyanide solution, using irrigation system 
+						crushed ore with diluted acid solution, using irrigation system 
 						such as sprinklers or drippers. Upon percolation of the leaching solvent in the ore 
 						heap metal oxides dissolve and drain down to the bottom of the heap. As a result the 
 						drained solution is enriched with the desired metal which is than processes from the 
-						metal bearing pregnant solution. Water percolation through the ore heap take place in 
+						metal bearing solution. Water percolation through the ore heap take place in 
 						unsaturated condition and derived by gravity and capillary forces. 
 						Implementation of 
 						%strong Sensoil 
@@ -197,13 +169,58 @@
 						of the percolating solvent in the unsaturated ore. As result the solvent application cycles 
 						may be managed according to the actual chemical evolution of the percolating water in the heap 
 						in order to increase mineral extraction efficiency.
-					%button{:type => "button"} Read More
+					%a.button.default.more{:href => "#experience"} Read More
 				.solution-images
 					%ul 
 						%li 
 							%img{:src => "img/heap.png", :alt => "Heap-leach mining"}
-						%li 
-						%li 
+				.next
+					%a{:href => "#experience"}
+
+	%section.experience#experience
+		.bg
+			.inner
+				%h3 Example projects
+				%ul
+					%li
+						%h4 Dynamics of flood-water infiltration and groundwater recharge
+						%p
+							Dynamics of flood-water infiltration and groundwater recharge was investigated using Vadose zone Monitoring systems which were installed under stream bed of ephemeral rivers and reservoirs. Data that was collected by the VMS during each flood enabled direct calculation of the percolation  flow velocities and infiltration fluxes.
+							%cite (Dahan et al., 2007; Dahan et al., 2008; Dahan et al., 2009; Amiaz et al., 201).
+						%img{:src => "img/experiences/dynamics-of-flood-water-infiltration-and-groundwater-recharge.png", :alt => "Dynamics of flood-water infiltration and groundwater recharge"}
+					%li
+						%h4 In-situ monitoring of water percolation and tracers migration through the vadose zone
+						%p
+							Water percolation and tracer migration through the vadose zone were studied through a multi-tracer experiment. Frequent sampling of the vadose zone pore-water at multiple points by the VMS allowed establishment of tracer breakthrough curves at various depths
+							%cite (Dahan et al., 2009. VZJ).
+						%img{:src => "img/experiences/in-situ-monitoring-of-water-percolation-and-tracers-migration-through-the-vadose-zone.png", :alt => "In-situ monitoring of water percolation and tracers migration through the vadose zone"}
+					%li
+						%h4 Optimization of Remediation Conditions using Vadose Zone Monitoring Technology
+						%p A vadose zone monitoring system that was installed under a gas station allowed accurate monitoring of the impact of remediation activities on the subsurface hydraulic and chemical conditions including: (1) temporal variation of the sediment water content, and (2) chemical and isotopic composition of the percolating water. Results from each wetting cycles were used to improve the following wetting cycles in order to optimize the vadose zone conditions for microbial degradation of BTEX while minimizing leaching of contaminants to the groundwater.
+						%img{:src => "img/experiences/optimization-of-remediation-conditions-using-vadose-zone-monitoring-technology.png", :alt => ""}
+					%li
+						%h4 Bioremediation of perchlorate in deep vadose zone
+						%p A study on enhance the biodegradation of perchlorate in the deep vadose zone was conducted through pilot scale experiment in a site that is heavily contaminated by perchlorate. Monitoring of the direct impact of enhanced percolation on the actual hydraulic and chemical conditions in the vadose zone was achieved using a vadose zone monitoring system (VMS) which measured continuously the vadose zone water content and allowed frequent sampling of the sediment pore water across the entire vadose zone of the site (40 m).
+						%img{:src => "img/experiences/bioremediation-of-perchlorate-in-deep-vadose-zone.png", :alt => "Bioremediation of perchlorate in deep vadose zone"}
+					%li
+						%h4 Land use impact on groundwater quality
+						%p Land use impact on groundwater quality was investigated using Vadose zone Monitoring Systems which were installed across the vadose zone underlying various agricultural, urban and industrial setups. The quality and quantity of the percolating water was measured continuously over several years and provided an early warning to potential pollution of groundwater by the various land uses.
+						%img{:src => "img/experiences/land-use-impact-on-groundwater-quality.png", :alt => "Land use impact on groundwater quality"}
+					%li
+						%h4 Related publications
+						%ol
+							%li Dahan, O., McDonald, E. and Young, M., 2003: Development of a flexible TDR probe for deep vadose zone monitoring. Vadose Zone Journal, 2: 270-275.
+							%li Rimon, Y., Dahan, O., Nativ, R. and Geyer, S., 2007: Water percolation through the deep vadose zone and groundwater recharge: preliminary results based on a new vadose-zone monitoring system. Water Resources Research (43, W05402, doi:10.1029/2006WR004855).
+							%li Dahan, O., Shani, Y., Enzel, Y., Yechieli, Y. and Yakirevich, A. 2007: Direct measurements of floodwater infiltration into shallow alluvial aquifers. Journal of Hydrology.
+							%li Dahan, O., Tatarsky, B., Enzel, Y., Kulls, C., Seely, M. and Benito, G., 2008. Dynamics of flood water infiltration and ground water recharge in hyperarid desert. Groundwater, 46(3): 450-61.
+							%li Sorek, A., N. Atzmon, O. Dahan, Z. Gerstl, L. Kushisin, Y. Laor, U. Mingelgrin, A. Nasser, D. Ronen, L. Tsechansky, N. Weisbrod, and E.R. Graber. 2008. "Phytoscreening": The use of trees for discovering subsurface contamination by vocs. Environ. Sci. Technol. 42:536-542.
+							%li Dahan, O., R. Talby, Y. Yechieli, E. Adar, N. Lazarovitch, and Y. Enzel. 2009. In-situ monitoring of water percolation in layered soils using a vadose-zone monitoring system. Vadose zone Journal, 8 (4): 916-925.
+							%li Rimon, Y., Nativ, R. and Dahan, O., 2010. Physical and chemical evidence for pore-scale dual domain flow in the vadose zone. Vadose zone Journal.
+							%li Benito, G., Botero, B. A., Thorndycraft, V. R., Rico, M., Sánchez-Moya, Y., Sopeña, A., Machado, M. J., and Dahan, O., 2011: Rainfall-runoff modelling and palaeoflood hydrology applied to reconstruct centennial scale records of flooding and aquifer recharge in ungauged ephemeral rivers, Hydrol. Earth Syst. Sci., 15, 1185-1196, doi:10.5194/hess-15-1185-2011, 2011.
+							%li Amiaz, Y., Sorek, S., Enzel, Y. and Dahan, O., 2011. Solute-transport in the vadose zone and ground water during flash floods. Water Resources Research.
+							%li Baram, S., Arnon, S., Ronen, Z., Kurtzman, D. and Dahan, O., 2011. Water percolation through a clayey vadose zone. Journal of Hydrology.
+							%li Baram, S., Arnon, S., Ronen, Z., Kurtzman, D. and Dahan, O., 2012. Infiltration mechanism controls nitrification and denitrification processes under dairy waste lagoon. Journal of Environmental Quality.
+
 	%section.about#about
 		.bg
 			.inner
@@ -225,7 +242,6 @@
 						the inventor of the VMS, tenure holder in the Department of Environmental Hydrology and Microbiology at Ben Gurion University of the Negev. Dr. Dahan is a specialist in the field vadose zone and groundwater Hydrology, his extensive knowledge in both fields lead to the development of the VMS. His research covers a wide range of studies on water flow and contaminant transport in the subsurface, including: flood water infiltration from streams and reservoirs, interactive bioremediation of contaminated vadose zone and land use impact on groundwater quality 
 						%a{:href => "http://w3.bgu.ac.il/ziwr/faculty/dahan/cv.htm"} (Dr. Ofer Dahan's web page).
 
-
 	%section.contact#contact
 		.bg
 			.inner
@@ -233,14 +249,14 @@
 					%h3 Contact us
 					%form.form-inline{:action => "sendMail.php"}
 						.data-row
-							%label.control-label{:for => "name"} Your name
+							%label.control-label{:for => "name"} *Your name
 							%input(type="text" id="name" name="name" placeholder="Your name")
 						.data-row
-							%label.control-label{:for => "email"} Your Email
-							%input(type="text" id="email" name="email" placeholder="Your name")
+							%label.control-label{:for => "email"} *Your Email
+							%input(type="text" id="email" name="email" placeholder="Your Email")
 						.data-row
-							%label.control-label{:for => "subject"} Message subject
-							%textarea(id="subject" name="subject" placeholder="Subject")
+							%label.control-label{:for => "subject"} *Message subject
+							%textarea(id="subject" name="subject" placeholder="Message Subject")
 						.data-row
 							.spacer
 							%button.btn.btn-success.btn-lg.btn-block(type="submit" id="name" placeholder="Your name") Send

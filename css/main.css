@@ -779,61 +779,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/**
- * variables & general class
- * ===================================================
- */
-
-/**
- * ========================
- * Variables
- * ========================
- */
-
-/**   datatable variables  **/
-
-/**
- * ========================
- * General classes
- * ========================
- */
-
-/* line 69, _variables.scss */
-
-.pull-right {
-  float: right;
-}
-
-/* line 73, _variables.scss */
-
-.pull-left {
-  float: left;
-}
-
-/* line 77, _variables.scss */
-
-.bold {
-  font-weight: bold;
-}
-
-/* line 81, _variables.scss */
-
-.negative {
-  color: #ed1c24;
-}
-
-/* line 85, _variables.scss */
-
-.positive {
-  color: #419639;
-}
-
-/* line 89, _variables.scss */
-
-.button {
-  cursor: pointer;
-}
-
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -6518,7 +6463,8 @@ form .form-horizontal .data-row:after {
 
 /* line 9, bootstrap/_buttons.scss */
 
-.btn {
+.btn,
+.button.default {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6541,7 +6487,8 @@ form .form-horizontal .data-row:after {
 
 /* line 22, bootstrap/_buttons.scss */
 
-.btn:focus {
+.btn:focus,
+.button.default:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -6550,7 +6497,9 @@ form .form-horizontal .data-row:after {
 /* line 26, bootstrap/_buttons.scss */
 
 .btn:hover,
-.btn:focus {
+.button.default:hover,
+.btn:focus,
+.button.default:focus {
   color: #333333;
   text-decoration: none;
 }
@@ -6558,7 +6507,9 @@ form .form-horizontal .data-row:after {
 /* line 32, bootstrap/_buttons.scss */
 
 .btn:active,
-.btn.active {
+.button.default:active,
+.btn.active,
+.active.button.default {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -6568,8 +6519,11 @@ form .form-horizontal .data-row:after {
 /* line 39, bootstrap/_buttons.scss */
 
 .btn.disabled,
+.disabled.button.default,
 .btn[disabled],
-fieldset[disabled] .btn {
+[disabled].button.default,
+fieldset[disabled] .btn,
+fieldset[disabled] .button.default {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -8304,6 +8258,78 @@ input[type="button"].btn-block {
   content: "\e200";
 }
 
+/**
+ * variables & general class
+ * ===================================================
+ */
+
+/**
+ * ========================
+ * Variables
+ * ========================
+ */
+
+/**   datatable variables  **/
+
+/**
+ * ========================
+ * General classes
+ * ========================
+ */
+
+/* line 69, _variables.scss */
+
+.pull-right {
+  float: right;
+}
+
+/* line 73, _variables.scss */
+
+.pull-left {
+  float: left;
+}
+
+/* line 77, _variables.scss */
+
+.bold {
+  font-weight: bold;
+}
+
+/* line 81, _variables.scss */
+
+.negative {
+  color: #ed1c24;
+}
+
+/* line 85, _variables.scss */
+
+.positive {
+  color: #419639;
+}
+
+/* line 89, _variables.scss */
+
+.button {
+  cursor: pointer;
+}
+
+/* line 92, _variables.scss */
+
+.button.default {
+  border-radius: 0;
+  cursor: pointer;
+  border: 1px solid #A5A4A4;
+  padding: 15px 30px;
+  background: #E9E9E9;
+  font-size: 16px;
+}
+
+/* line 101, _variables.scss */
+
+.button.default:active {
+  background: #E6E6E6;
+}
+
 /* line 1, _layout.scss */
 
 html[lang='he'] {
@@ -8344,11 +8370,17 @@ html {
   /* line 35, _layout.scss */
 
   .next a:before {
-    padding: 0 1px 2px 0;
+    padding: 0 1px 2px 0 !important;
+  }
+
+  /* line 40, _layout.scss */
+
+  .site-header nav > ul > li a {
+    padding: 26px 24px;
   }
 }
 
-/* line 41, _layout.scss */
+/* line 45, _layout.scss */
 
 body {
   margin: 0 auto;
@@ -8356,28 +8388,28 @@ body {
   font-size: 16px;
 }
 
-/* line 47, _layout.scss */
+/* line 51, _layout.scss */
 
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 51, _layout.scss */
+/* line 55, _layout.scss */
 
 a:active,
 a:visited {
   color: black;
 }
 
-/* line 56, _layout.scss */
+/* line 60, _layout.scss */
 
 i {
   display: inline-block;
   font-style: normal;
 }
 
-/* line 61, _layout.scss */
+/* line 65, _layout.scss */
 
 h1,
 h2,
@@ -8389,33 +8421,37 @@ h6 {
   font-weight: normal;
 }
 
-/* line 76, _layout.scss */
+/* line 80, _layout.scss */
 
 h2 {
-  font-size: 1.55rem;
+  font-size: 2.2rem;
   font-weight: bold;
-}
-
-/* line 81, _layout.scss */
-
-h3 {
-  font-size: 1.65em;
 }
 
 /* line 85, _layout.scss */
 
-h4 {
-  font-size: 1.25em;
-  font-family: Raleway;
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* line 90, _layout.scss */
 
-p {
-  font-size: 1.4rem;
+h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: Raleway;
 }
 
-/* line 94, _layout.scss */
+/* line 96, _layout.scss */
+
+p {
+  font-size: 1.4rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+/* line 102, _layout.scss */
 
 ul {
   list-style: none;
@@ -8424,13 +8460,13 @@ ul {
   font-size: 1.3rem;
 }
 
-/* line 101, _layout.scss */
+/* line 109, _layout.scss */
 
 table {
   width: 100%;
 }
 
-/* line 105, _layout.scss */
+/* line 113, _layout.scss */
 
 .inner {
   margin: 0 auto;
@@ -8440,13 +8476,13 @@ table {
   position: relative;
 }
 
-/* line 116, _layout.scss */
+/* line 124, _layout.scss */
 
 button.primary {
   padding: 1rem 3rem;
 }
 
-/* line 123, _layout.scss */
+/* line 131, _layout.scss */
 
 .site-header {
   height: 6.25rem;
@@ -8461,33 +8497,33 @@ button.primary {
   transition: height 0.3s;
 }
 
-/* line 137, _layout.scss */
+/* line 145, _layout.scss */
 
 .site-header * {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-/* line 143, _layout.scss */
+/* line 151, _layout.scss */
 
 .site-header a {
   color: white !important;
 }
 
-/* line 146, _layout.scss */
+/* line 154, _layout.scss */
 
 .site-header a:hover {
   text-decoration: none;
 }
 
-/* line 151, _layout.scss */
+/* line 159, _layout.scss */
 
 .site-header h1 {
   float: left;
   font-size: 2rem;
 }
 
-/* line 157, _layout.scss */
+/* line 165, _layout.scss */
 
 .site-header nav {
   width: 100%;
@@ -8495,7 +8531,7 @@ button.primary {
   text-align: center;
 }
 
-/* line 162, _layout.scss */
+/* line 170, _layout.scss */
 
 .site-header nav > ul > li {
   display: inline-block;
@@ -8503,14 +8539,14 @@ button.primary {
   position: relative;
 }
 
-/* line 167, _layout.scss */
+/* line 175, _layout.scss */
 
 .site-header nav > ul > li a {
   padding: 32px 24px;
   line-height: 6.25rem;
 }
 
-/* line 172, _layout.scss */
+/* line 179, _layout.scss */
 
 .site-header nav > ul > li a:hover {
   background: #2ecc71;
@@ -8518,7 +8554,7 @@ button.primary {
   transition: 0.5s all ease;
 }
 
-/* line 179, _layout.scss */
+/* line 186, _layout.scss */
 
 .site-header nav > ul > li:hover > a {
   background: #2ecc71;
@@ -8526,13 +8562,13 @@ button.primary {
   transition: 0.5s all ease;
 }
 
-/* line 184, _layout.scss */
+/* line 191, _layout.scss */
 
 .site-header nav > ul > li:hover .sub-list {
   display: block;
 }
 
-/* line 189, _layout.scss */
+/* line 196, _layout.scss */
 
 .site-header nav > ul > li .sub-list {
   position: absolute;
@@ -8542,13 +8578,13 @@ button.primary {
   display: none;
 }
 
-/* line 196, _layout.scss */
+/* line 203, _layout.scss */
 
 .site-header nav > ul > li .sub-list li {
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 198, _layout.scss */
+/* line 205, _layout.scss */
 
 .site-header nav > ul > li .sub-list li a {
   padding: 5px 40px;
@@ -8556,32 +8592,32 @@ button.primary {
   display: block;
 }
 
-/* line 208, _layout.scss */
+/* line 215, _layout.scss */
 
 .site-header .inner {
   padding: 0;
 }
 
-/* line 214, _layout.scss */
+/* line 221, _layout.scss */
 
 .site-header.shrink {
   height: 3.125rem;
 }
 
-/* line 216, _layout.scss */
+/* line 223, _layout.scss */
 
 .site-header.shrink h1 {
   font-size: 1rem;
 }
 
-/* line 220, _layout.scss */
+/* line 227, _layout.scss */
 
 .site-header.shrink nav > ul > li a {
   line-height: 3.125rem;
-  padding: 0.9rem 24px;
+  padding: 0.8rem 24px;
 }
 
-/* line 227, _layout.scss */
+/* line 234, _layout.scss */
 
 footer {
   background: white;
@@ -8589,13 +8625,13 @@ footer {
   font-size: 2rem;
 }
 
-/* line 233, _layout.scss */
+/* line 240, _layout.scss */
 
 section#main {
-  margin-top: 7.25rem;
+  padding-top: 7.25rem;
 }
 
-/* line 236, _layout.scss */
+/* line 243, _layout.scss */
 
 section#main .summary {
   float: left;
@@ -8612,14 +8648,14 @@ section#main .summary:last-child {
   margin-right: 0;
 }
 
-/* line 243, _layout.scss */
+/* line 250, _layout.scss */
 
 section#main .summary ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
 
-/* line 249, _layout.scss */
+/* line 256, _layout.scss */
 
 section#main .media {
   float: left;
@@ -8638,7 +8674,7 @@ section#main .media:last-child {
   margin-right: 0;
 }
 
-/* line 265, _layout.scss */
+/* line 272, _layout.scss */
 
 section#main .solutions {
   float: left;
@@ -8655,7 +8691,7 @@ section#main .solutions:last-child {
   margin-right: 0;
 }
 
-/* line 273, _layout.scss */
+/* line 280, _layout.scss */
 
 section#main .solutions li {
   float: left;
@@ -8671,7 +8707,7 @@ section#main .solutions li:last-child {
   margin-right: 0;
 }
 
-/* line 277, _layout.scss */
+/* line 284, _layout.scss */
 
 section#main .solutions li a {
   margin-right: 5%;
@@ -8683,7 +8719,7 @@ section#main .solutions li a {
   width: 100%;
 }
 
-/* line 290, _layout.scss */
+/* line 297, _layout.scss */
 
 .next {
   text-align: center;
@@ -8697,7 +8733,7 @@ section#main .solutions li a {
   z-index: 10;
 }
 
-/* line 301, _layout.scss */
+/* line 308, _layout.scss */
 
 .next a {
   display: inline-block;
@@ -8706,7 +8742,7 @@ section#main .solutions li a {
   color: white;
 }
 
-/* line 310, _layout.scss */
+/* line 317, _layout.scss */
 
 .next a::before {
   border-radius: 50%;
@@ -8716,66 +8752,150 @@ section#main .solutions li a {
   display: block;
 }
 
-/* line 320, _layout.scss */
+/* line 327, _layout.scss */
+
+.next {
+  position: static;
+  z-index: auto;
+  margin-left: 0;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8rem;
+}
+
+/* line 335, _layout.scss */
+
+.next a {
+  display: inline-block;
+  height: 65px;
+  width: 55px;
+  color: white;
+}
+
+/* line 344, _layout.scss */
+
+.next a::before {
+  border-radius: 50%;
+  background: black;
+  height: 3.81rem;
+  width: 3.81rem;
+  display: block;
+}
+
+/* line 354, _layout.scss */
 
 section:not(#main) {
   border-bottom: 2px solid #E7E7E7;
 }
 
-/* line 323, _layout.scss */
+/* line 357, _layout.scss */
 
 section:not(#main) .bg {
   background: rgba(255, 255, 255, 0);
   height: 100%;
 }
 
-/* line 331, _layout.scss */
+/* line 366, _layout.scss */
 
-.solution-types {
-  background: white;
-  min-height: 650px;
+.experience .inner {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 85%;
 }
 
-/* line 341, _layout.scss */
+/* line 372, _layout.scss */
 
-.experience {
-  background: lightblue;
+.experience .inner > ul > li:not(:last-child) {
+  margin-bottom: 200px;
 }
 
-/* line 345, _layout.scss */
+/* line 378, _layout.scss */
+
+.experience h3 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+
+/* line 383, _layout.scss */
+
+.experience h4 {
+  font-weight: normal;
+}
+
+/* line 387, _layout.scss */
+
+.experience p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* line 392, _layout.scss */
+
+.experience cite {
+  font-style: italic;
+}
+
+/* line 396, _layout.scss */
+
+.experience img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+/* line 401, _layout.scss */
+
+.experience ol li {
+  margin-bottom: 10px;
+}
+
+/* line 406, _layout.scss */
 
 .about,
-.contact {
-  background: white url(../img/bg/about-bg.png) repeat center center;
+.contact,
+.experience {
+  background: black url(../img/bg/about-bg.png) repeat center center;
   color: #7e7e7e;
 }
 
-/* line 350, _layout.scss */
+/* line 411, _layout.scss */
 
 .about h3,
+.about h4,
 .about a,
 .about strong,
 .contact h3,
+.contact h4,
 .contact a,
-.contact strong {
+.contact strong,
+.experience h3,
+.experience h4,
+.experience a,
+.experience strong {
   color: #e7e7e7;
 }
 
-/* line 354, _layout.scss */
+/* line 415, _layout.scss */
 
 .about a,
-.contact a {
+.contact a,
+.experience a {
   text-decoration: underline;
 }
 
-/* line 360, _layout.scss */
+/* line 421, _layout.scss */
+
+.about .inner {
+  width: 85%;
+}
+
+/* line 427, _layout.scss */
 
 .contact .content {
   margin: 0 auto;
   width: 50%;
 }
 
-/* line 364, _layout.scss */
+/* line 431, _layout.scss */
 
 .contact .content h3 {
   margin-bottom: 40px;
@@ -8817,10 +8937,11 @@ section:not(#main) .bg {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
+  margin-right: 0;
   margin-top: 3rem;
   padding: 0 1rem 1rem;
-  line-height: 3rem;
-  background: rgba(255, 255, 255, 0.55);
+  line-height: 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 /* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
@@ -8829,7 +8950,7 @@ section:not(#main) .bg {
   margin-right: 0;
 }
 
-/* line 27, _solutions.scss */
+/* line 28, _solutions.scss */
 
 #groundwater-pollution-protecting {
   background: white url(../img/bg/pollution-bg.png) no-repeat center center;
@@ -8837,19 +8958,13 @@ section:not(#main) .bg {
   background-size: cover;
 }
 
-/* line 34, _solutions.scss */
-
-#groundwater-pollution-protecting .solution-content {
-  background: rgba(255, 255, 255, 0.55);
-}
-
-/* line 39, _solutions.scss */
+/* line 36, _solutions.scss */
 
 #groundwater-pollution-protecting .solution-images img {
   width: 60%;
 }
 
-/* line 47, _solutions.scss */
+/* line 44, _solutions.scss */
 
 #earthen-dam {
   background: white url(../img/bg/main-bg.jpg) no-repeat center center;
@@ -8857,7 +8972,7 @@ section:not(#main) .bg {
   background-size: cover;
 }
 
-/* line 57, _solutions.scss */
+/* line 54, _solutions.scss */
 
 #optimization-of-remediation-strategies {
   background: white url(../img/bg/remediation-strategies-bg.jpg) no-repeat center center;
@@ -8865,48 +8980,18 @@ section:not(#main) .bg {
   background-size: cover;
 }
 
-/* line 65, _solutions.scss */
+/* line 62, _solutions.scss */
 
 #optimization-of-remediation-strategies .solution-images img {
-  width: 60%;
+  width: 80%;
 }
 
-/* line 73, _solutions.scss */
+/* line 70, _solutions.scss */
 
 #heap-leach-mining {
-  background: white url(../img/bg/mining-bg.png) no-repeat center center;
+  background: white url(../img/bg/mining-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
-}
-
-/* line 80, _solutions.scss */
-
-#heap-leach-mining .solution-content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-
-/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-
-#heap-leach-mining .solution-content:last-child {
-  margin-right: 0;
-}
-
-/* line 84, _solutions.scss */
-
-#heap-leach-mining .solution-images {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-
-/* line 40, C:/Program Files (x86)/Prepros/gems/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-
-#heap-leach-mining .solution-images:last-child {
-  margin-right: 0;
 }
 
 /* line 3, _form.scss */

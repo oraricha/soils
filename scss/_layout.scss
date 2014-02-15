@@ -33,8 +33,12 @@ html {
 
 	.next a {
 		&:before {
-			padding: 0 1px 2px 0;
+			padding: 0 1px 2px 0 !important;
 		}
+	}
+
+	.site-header nav > ul > li a {
+		padding: 26px 24px;
 	}
 }
 
@@ -74,21 +78,25 @@ i {
 @include h-tag-style;
 
 h2 {
-	font-size: 1.55rem;
+	font-size: 2.2rem;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 1.65em;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 h4 {
-	font-size: 1.25em;
+	font-size: 1.75rem;
+	font-weight: bold;
 	font-family: $main-font;
 }
 
 p {
 	font-size: 1.4rem;
+	text-align:justify;
+	line-height: 2.5rem;
 }
 
 ul {
@@ -129,7 +137,7 @@ button.primary {
 	left: 0;
 	width: 100%;
 	z-index: 10000;
-	// overflow: hidden;
+
 	-webkit-transition: height 0.3s;
 	-moz-transition: height 0.3s;
 	transition: height 0.3s;
@@ -165,7 +173,6 @@ button.primary {
 			position: relative;
 
 			a {
-				// height: 50px;
 				padding: 32px 24px;
 				line-height: $header-height;
 
@@ -219,7 +226,7 @@ button.primary {
 
 		nav > ul > li a {
 			line-height: $header-height / 2;
-			padding: 0.9rem 24px;
+			padding: 0.8rem 24px;
 		}
 	}
 }
@@ -231,7 +238,7 @@ footer {
 }
 
 section#main {
-	margin-top: $header-height + 1rem;
+	padding-top: $header-height + 1rem;
 
 	.summary {
 		@include span-columns(6);
@@ -317,6 +324,33 @@ section#main {
 	}
 }
 
+.next {
+	position: static;
+	z-index: auto;
+	margin-left: 0;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 8rem;
+
+	a {
+		@extend .fa;
+		@extend .fa-chevron-circle-down;
+
+		display: inline-block;
+		height: 65px;
+		width: 55px;
+		color: white;
+
+		&::before {
+			@include border-radius(50%);
+			background: black;
+			height: 3.81rem;
+			width: 3.81rem;
+			display: block;
+		}
+	}
+}
+
 section:not(#main) {
 	border-bottom: 2px solid #E7E7E7;
 
@@ -328,31 +362,64 @@ section:not(#main) {
 	}
 }
 
-.solution-types {
-	background: white;
-	min-height: 650px;
-}
-
-// 	select, input {
-// 		width: 280px;
-// 	}
-// }
-
 .experience {
-	background: lightblue;
+	.inner {
+		margin-top: 40px;
+		margin-bottom: 80px;
+		width: 85%;
+
+		> ul > li {
+			&:not(:last-child) {
+				margin-bottom: 200px;
+			}
+		}
+	}
+
+	h3 {
+		margin-bottom: 40px;
+		font-size: 3rem;
+	}
+
+	h4 {
+		font-weight: normal;
+	}
+
+	p {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+
+	cite {
+		font-style: italic;
+	}
+
+	img {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	ol li {
+		margin-bottom: 10px;
+	}
 }
 
-.about, .contact {
-	background: white url(../img/bg/about-bg.png) repeat center center;
+.about, .contact, .experience {
+	background: black url(../img/bg/about-bg.png) repeat center center;
 
 	color: #7e7e7e;
 
-	h3, a, strong {
+	h3, h4, a, strong {
 		color: #e7e7e7;
 	}
 
 	a {
 		text-decoration: underline;
+	}
+}
+
+.about {
+	.inner {
+		width: 85%;
 	}
 }
 
