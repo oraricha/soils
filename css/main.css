@@ -7286,7 +7286,7 @@ html {
   /* line 40, _layout.scss */
 
   .site-header nav > ul > li a {
-    padding: 26px 24px;
+    padding: 26px 24px !important;
   }
 }
 
