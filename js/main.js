@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 		form.submit(function(e){
 			e.preventDefault();
-			console.log('submitted');
+			console.log('entered');
 
 			// var inputs = {
 			// 	name: form.find("input[id=name]"),
@@ -100,17 +100,22 @@ $(document).ready(function() {
 
 			if (validateForm(inputs)) {
 				var request = {
-					url: "sendMail.php",
+					url: "server.php",
 					data: form.serialize(),
+				};
+
+				var success = function(data) {
+					console.log(data);
 				};
 				console.log(request.data);
 				$.ajax({
 					type: "POST",
 					url: request.url,
-					data: request.data/*,
-					success: success,
+					data: request.data,
+					success: success/*,
 					dataType: dataType*/
 				});
+				console.log('submitted');
 			}
 		});
 	})();
