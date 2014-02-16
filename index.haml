@@ -247,7 +247,7 @@
 			.inner
 				.content
 					%h3 Contact us
-					%form.form-inline{:action => "sendMail.php"}
+					%form.form-inline{:action => ""}
 						.data-row
 							%label.control-label{:for => "name"} *Your name
 							%input(type="text" id="name" name="name" placeholder="Your name")
@@ -261,6 +261,10 @@
 							.spacer
 							%button.btn.btn-success.btn-lg.btn-block(type="submit" id="name" placeholder="Your name") Send
 						.data-row
+							.alert.alert-success
+								%strong Success! 
+								Your message has been sent
+
 
 
 

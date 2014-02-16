@@ -96,7 +96,7 @@ $(document).ready(function() {
 			var inputs = [];
 			inputs.push(form.find("input[id=name]"));
 			inputs.push(form.find("input[id=email]"));
-			inputs.push(form.find("textarea[id=subject]"));
+			inputs.push(form.find("textarea[id=message]"));
 
 			if (validateForm(inputs)) {
 				var request = {

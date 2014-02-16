@@ -3,17 +3,17 @@
 	//if "email" is filled out, send email
 		//send email
 		$email = $_REQUEST['email'];
+		$to = "111@gmail.com";
 		$name = $_REQUEST['name'];
-		$subject = $_REQUEST['subject'];
+		$subject = "Message from sensoils.com (From:" . $name . "(" . $email . ")";
 		$message = $_REQUEST['message'];
 		mail(
-			"uxappdev@gmail.com",
+			$to,
 			$subject,
-			$message,
-			"From:" . $name . "(" . $email . ")");
-		echo "Thank you for using our mail form";
+			$message;
+		echo "Your message has been sent.";
 	}	else {
 		//if "email" is not filled out, display the form
-		echo "FAILLLLL!!!!!!!!!!!!!";
-		}
+		echo "Email is missing";
+	}
 ?>

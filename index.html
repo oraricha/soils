@@ -316,7 +316,7 @@
       <div class='inner'>
         <div class='content'>
           <h3>Contact us</h3>
-          <form action='sendMail.php' class='form-inline'>
+          <form action='' class='form-inline'>
             <div class='data-row'>
               <label class='control-label' for='name'>*Your name</label>
               <input id='name' name='name' placeholder='Your name' type='text'>
@@ -333,7 +333,12 @@
               <div class='spacer'></div>
               <button class='btn btn-success btn-lg btn-block' id='name' placeholder='Your name' type='submit'>Send</button>
             </div>
-            <div class='data-row'></div>
+            <div class='data-row'>
+              <div class='alert alert-success'>
+                <strong>Success!</strong>
+                Your message has been sent
+              </div>
+            </div>
           </form>
         </div>
       </div>
