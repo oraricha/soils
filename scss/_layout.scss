@@ -95,8 +95,9 @@ h4 {
 
 p {
 	font-size: 1.4rem;
-	text-align:justify;
-	line-height: 2.5rem;
+	// text-align:justify;
+	line-height: 2.2rem;
+	margin-top: 1rem;
 }
 
 ul {
@@ -244,8 +245,8 @@ section#main {
 		@include span-columns(6);
 
 		@extend .clearfix;
-		background: rgba(255,255,255,0.70);
-		padding: 0.5rem;
+		background: rgba(255,255,255,0.95);
+		padding: 2rem 3rem;
 
 		ul {
 			list-style-type: disc;
