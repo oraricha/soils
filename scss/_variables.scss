@@ -93,10 +93,11 @@ $small-height: "screen and (max-height: 667px)";
 		@extend .btn;
 		@include border-radius(0);
 		cursor: pointer;
-		border: 1px solid #A5A4A4;
 		padding: 15px 30px;
-		background: #E9E9E9;
 		font-size: 16px;
+		background: #2ecc71;
+		color: white;
+		border: none;
 
 		&:active {
 			background: #E6E6E6;
