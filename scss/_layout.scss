@@ -363,6 +363,8 @@ section:not(#main) {
 }
 
 .experience {
+	background: white;
+
 	.inner {
 		margin-top: 40px;
 		margin-bottom: 80px;
@@ -382,11 +384,15 @@ section:not(#main) {
 
 	h4 {
 		font-weight: normal;
+		font-weight: bold;
+		margin: 0 30%;
 	}
 
 	p {
 		font-size: 1.5rem;
 		margin-bottom: 20px;
+		width: 60%;
+		margin: 0 20%;
 	}
 
 	cite {
@@ -403,7 +409,7 @@ section:not(#main) {
 	}
 }
 
-.about, .contact, .experience {
+.about, .contact{
 	background: black url(../img/bg/about-bg.png) repeat center center;
 
 	color: #7e7e7e;

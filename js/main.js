@@ -44,7 +44,7 @@ $(document).ready(function() {
 		window.location.href = href;
 	});
 
-	resizeHeader();
+	// resizeHeader();
 
 	$window.resize(function() {
 		setSectionHeight();
