@@ -11,6 +11,34 @@ $(document).ready(function() {
 		});
 	};
 
+	var setHeaderLinksListeners = function() {
+		var links = $(".site-header nav > ul > li");
+		// var solutionsElemnts = links[1]
+
+		links.each(function(index, element) {
+			element = $(element);
+			var href = $(element.children("a")[0]).attr("href");
+			href = href === "#" ? "body" : href;
+			var hrefElement = $(href);
+			console.log(href);
+			$window.on("scroll", function() {
+				var bodyFromTop = $("body").scrollTop();
+				// var hrefElement = $(href);
+				var hrefFromTop = hrefElement.offset().top;
+				var hrefHeight = hrefElement.height();
+				console.log('body from top: ', bodyFromTop);
+				console.log(href + ' from top: ', hrefFromTop);
+				if (bodyFromTop <= hrefFromTop) {
+					console.log(href);
+					console.log(hrefFromTop);
+					element.addClass("active");
+				}
+			});
+
+		});
+
+	};
+
 	var setSectionHeight = function() {
 		var viewportHeight = $window.height();
 		var sections = $("body section").not("#experience, #about");
@@ -24,6 +52,7 @@ $(document).ready(function() {
 
 	// logic
 	setSectionHeight();
+	// setHeaderLinksListeners();
 
 	$(".next a, .site-header a, .more").click(function(e) {
 		var href = e.target.href;
