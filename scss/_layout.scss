@@ -171,6 +171,7 @@ button.primary {
 		width: 100%;
 		font-size: 1.5rem;
 		text-align: center;
+		margin-left: -40px;
 
 		& > ul > li {
 			display: inline-block;
@@ -244,6 +245,13 @@ footer {
 
 section#main {
 	padding-top: $header-height + 1rem;
+
+	.inner > h2 {
+		margin: 40px auto;
+		width: 960px;
+		color: white;
+		font-size: 4rem;
+	}
 
 	.summary {
 		@include span-columns(6);
