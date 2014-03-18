@@ -376,7 +376,7 @@ section:not(#main) {
 	}
 }
 
-.experience {
+.references {
 	background: white;
 
 	.inner {
@@ -429,7 +429,7 @@ section:not(#main) {
 	}
 }
 
-.about, .contact{
+.about, .contact {
 	background: black url(../img/bg/about-bg.png) repeat center center;
 
 	color: #7e7e7e;
@@ -446,6 +446,7 @@ section:not(#main) {
 .about {
 	.inner {
 		width: 85%;
+		margin-top: $header-height;
 	}
 }
 

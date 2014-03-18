@@ -7249,6 +7249,12 @@ input[type="button"].btn-block {
   background: #25a25a;
 }
 
+/* line 113, _variables.scss */
+
+.button.default.more {
+  min-width: 144px;
+}
+
 /* line 1, _layout.scss */
 
 html[lang='he'] {
@@ -7733,13 +7739,13 @@ section:not(#main) .bg {
 
 /* line 379, _layout.scss */
 
-.experience {
+.references {
   background: white;
 }
 
 /* line 382, _layout.scss */
 
-.experience .inner {
+.references .inner {
   margin-top: 40px;
   margin-bottom: 80px;
   width: 85%;
@@ -7747,20 +7753,20 @@ section:not(#main) .bg {
 
 /* line 388, _layout.scss */
 
-.experience .inner > ul > li:not(:last-child) {
+.references .inner > ul > li:not(:last-child) {
   margin-bottom: 200px;
 }
 
 /* line 394, _layout.scss */
 
-.experience h3 {
+.references h3 {
   margin-bottom: 40px;
   font-size: 3rem;
 }
 
 /* line 399, _layout.scss */
 
-.experience h4 {
+.references h4 {
   font-weight: normal;
   font-weight: bold;
   margin: inherit 30%;
@@ -7770,7 +7776,7 @@ section:not(#main) .bg {
 
 /* line 407, _layout.scss */
 
-.experience p {
+.references p {
   font-size: 1.5rem;
   margin-bottom: 20px;
   width: 70%;
@@ -7779,26 +7785,26 @@ section:not(#main) .bg {
 
 /* line 414, _layout.scss */
 
-.experience p + img {
+.references p + img {
   margin-top: 3rem;
 }
 
 /* line 418, _layout.scss */
 
-.experience cite {
+.references cite {
   font-style: italic;
 }
 
 /* line 422, _layout.scss */
 
-.experience img {
+.references img {
   width: 80%;
   margin: 0 10%;
 }
 
 /* line 427, _layout.scss */
 
-.experience ol li {
+.references ol li {
   margin-bottom: 10px;
 }
 
@@ -7834,22 +7840,23 @@ section:not(#main) .bg {
 
 .about .inner {
   width: 85%;
+  margin-top: 6.25rem;
 }
 
-/* line 453, _layout.scss */
+/* line 454, _layout.scss */
 
 .contact .inner {
   padding-top: 6.25rem;
 }
 
-/* line 456, _layout.scss */
+/* line 457, _layout.scss */
 
 .contact .content {
   margin: 0 auto;
   width: 50%;
 }
 
-/* line 460, _layout.scss */
+/* line 461, _layout.scss */
 
 .contact .content h3 {
   margin-bottom: 40px;

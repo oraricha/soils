@@ -54,7 +54,7 @@ $(document).ready(function() {
 	setSectionHeight();
 	// setHeaderLinksListeners();
 
-	$(".next a, .site-header a, .more").click(function(e) {
+	$(".next a, .site-header a").click(function(e) {
 		var href = e.target.href;
 		var target = href.indexOf("#");
 		target = href.substr(target);
@@ -71,6 +71,23 @@ $(document).ready(function() {
 
 		// make sure we updat the url for SEO parsing
 		window.location.href = href;
+	});
+
+	$(".more").click(function(e) {
+		var $this = $(this);
+		var siblings = $(this).siblings();
+		var brief = $this.prevAll(".brief");
+		
+		brief.slideToggle(function() {
+			if (brief.is(':visible')) {
+				$this.text("Read More");
+			} else {
+				$this.text("Read Less");
+			}
+		});
+		$this.prevAll(".technology").slideToggle();
+
+		
 	});
 
 	// resizeHeader();

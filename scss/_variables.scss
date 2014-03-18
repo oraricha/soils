@@ -109,6 +109,10 @@ $small-height: "screen and (max-height: 667px)";
 		&:active {
 			background: darken(#2ecc71, 10%);
 		}
+
+		&.more {
+			min-width: 144px;
+		}
 	}
 }
 
