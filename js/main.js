@@ -55,11 +55,13 @@ $(document).ready(function() {
 	// setHeaderLinksListeners();
 
 	$(".next a, .site-header a").click(function(e) {
+		if ($(document).find("title").text().indexOf("references") >= 0) { return; }
+
 		var href = e.target.href;
 		var target = href.indexOf("#");
 		target = href.substr(target);
 
-		if (target === "#") { return; }
+		if (target === "#" || href.indexOf("references") >= 0) { return; }
 		e.preventDefault();
 		e.stopPropagation();
 
