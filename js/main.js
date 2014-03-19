@@ -54,7 +54,8 @@ $(document).ready(function() {
 	setSectionHeight();
 	// setHeaderLinksListeners();
 
-	$(".next a, .site-header a").click(function(e) {
+	// $(".next a, .site-header a").click(function(e) {
+	$(".next a").click(function(e) {
 		if ($(document).find("title").text().indexOf("references") >= 0) { return; }
 
 		var href = e.target.href;
@@ -74,6 +75,20 @@ $(document).ready(function() {
 		// make sure we updat the url for SEO parsing
 		window.location.href = href;
 	});
+
+	$("header.site-header nav").singlePageNav({
+		offset: $('header.site-header').outerHeight(),
+		filter: ':not(.external)',
+		updateHash: true,
+		beforeStart: function() {
+			console.log('begin scrolling');
+		},
+		onComplete: function() {
+			console.log('done scrolling');
+		}
+	});
+
+	
 
 	$(".more").click(function(e) {
 		var $this = $(this);

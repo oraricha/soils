@@ -4938,7 +4938,7 @@ button.primary {
   padding: 32px 24px;
   line-height: 6.25rem;
 }
-.site-header nav > ul > li a:hover {
+.site-header nav > ul > li a:hover, .site-header nav > ul > li a.current {
   background: #2ecc71;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
@@ -4950,6 +4950,11 @@ button.primary {
 }
 .site-header nav > ul > li:hover .sub-list, .site-header nav > ul > li .active .sub-list {
   display: block;
+}
+.site-header nav > ul > li.current > a {
+  background: #2ecc71;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 .site-header nav > ul > li .sub-list {
   position: absolute;

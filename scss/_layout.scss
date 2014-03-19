@@ -182,7 +182,7 @@ button.primary {
 				padding: 32px 24px;
 				line-height: $header-height;
 
-				&:hover {
+				&:hover, &.current {
 					background: $light-green;
 					@include transition(0.5s all ease);
 				}
@@ -196,6 +196,13 @@ button.primary {
 
 				.sub-list {
 					display: block;
+				}
+			}
+
+			&.current {
+				> a {
+					background: $light-green;
+					@include transition(0.5s all ease);
 				}
 			}
 
