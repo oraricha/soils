@@ -24,6 +24,7 @@
 		.inner
 			%h1
 				%a{:href => "#", :title => "sensoil"} Sensoil
+				%img{:src => "img/logo.png", :alt => "Sensoil"}
 			%nav
 				%ul
 					%li
@@ -316,12 +317,15 @@
 							.spacer
 							%button.btn.btn-success.btn-lg.btn-block(type="submit" id="name") Send
 						.data-row
-							.alert.alert-success
+							#alert-success.alert.alert-success
 								%strong Success! 
 								Your message has been sent
-							.alert.alert-error
+							#alert-fail.alert.alert-danger
 								%strong Error! 
 								something went wrong, please try again later...
+							#alert-fields.alert.alert-danger
+								%strong Error! 
+								Please fill in all the red fields...
 
 
 

@@ -20,17 +20,17 @@ $(document).ready(function() {
 			var href = $(element.children("a")[0]).attr("href");
 			href = href === "#" ? "body" : href;
 			var hrefElement = $(href);
-			console.log(href);
+			// console.log(href);
 			$window.on("scroll", function() {
 				var bodyFromTop = $("body").scrollTop();
 				// var hrefElement = $(href);
 				var hrefFromTop = hrefElement.offset().top;
 				var hrefHeight = hrefElement.height();
-				console.log('body from top: ', bodyFromTop);
-				console.log(href + ' from top: ', hrefFromTop);
+				// console.log('body from top: ', bodyFromTop);
+				// console.log(href + ' from top: ', hrefFromTop);
 				if (bodyFromTop <= hrefFromTop) {
-					console.log(href);
-					console.log(hrefFromTop);
+					// console.log(href);
+					// console.log(hrefFromTop);
 					element.addClass("active");
 				}
 			});
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 	var setSectionHeight = function() {
 		var viewportHeight = $window.height();
-		var sections = $("body section").not("#experience, #about");
+		var sections = $("body section");
 		sections.each(function(index, element) {
 			element = $(element);
 			if (element.height() < viewportHeight) {
@@ -81,14 +81,14 @@ $(document).ready(function() {
 		filter: ':not(.external)',
 		updateHash: true,
 		beforeStart: function() {
-			console.log('begin scrolling');
+			// console.log('begin scrolling');
 		},
 		onComplete: function() {
-			console.log('done scrolling');
+			// console.log('done scrolling');
 		}
 	});
 
-	
+
 
 	$(".more").click(function(e) {
 		var $this = $(this);
@@ -162,6 +162,8 @@ $(document).ready(function() {
 			inputs.push(form.find("textarea[id=message]"));
 
 			if (validateForm(inputs)) {
+				$("#alert-fields").hide();
+
 				var request = {
 					url: "server.php",
 					data: form.serialize(),
@@ -169,16 +171,28 @@ $(document).ready(function() {
 
 				var success = function(data) {
 					console.log(data);
+					$("#alert-success").show();
+					$("#alert-fail").hide();
 				};
+
+				var fail = function(data) {
+					console.log(data);
+					$("#alert-fail").show();
+					$("#alert-success").hide();
+				};
+
 				console.log(request.data);
 				$.ajax({
 					type: "POST",
 					url: request.url,
 					data: request.data,
-					success: success/*,
+					success: success,
+					error: fail/*,
 					dataType: dataType*/
 				});
 				console.log('submitted');
+			} else {
+				$("#alert-fields").show();
 			}
 		});
 	})();

@@ -21,6 +21,7 @@
     <div class='inner'>
       <h1>
         <a href='#' title='sensoil'>Sensoil</a>
+        <img alt='Sensoil' src='img/logo.png'>
       </h1>
       <nav>
         <ul>
@@ -381,13 +382,17 @@
               <button class='btn btn-success btn-lg btn-block' id='name' type='submit'>Send</button>
             </div>
             <div class='data-row'>
-              <div class='alert alert-success'>
+              <div class='alert alert-success' id='alert-success'>
                 <strong>Success!</strong>
                 Your message has been sent
               </div>
-              <div class='alert alert-error'>
+              <div class='alert alert-danger' id='alert-fail'>
                 <strong>Error!</strong>
                 something went wrong, please try again later...
+              </div>
+              <div class='alert alert-danger' id='alert-fields'>
+                <strong>Error!</strong>
+                Please fill in all the red fields...
               </div>
             </div>
           </form>
