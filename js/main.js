@@ -20,17 +20,11 @@ $(document).ready(function() {
 			var href = $(element.children("a")[0]).attr("href");
 			href = href === "#" ? "body" : href;
 			var hrefElement = $(href);
-			// console.log(href);
 			$window.on("scroll", function() {
 				var bodyFromTop = $("body").scrollTop();
-				// var hrefElement = $(href);
 				var hrefFromTop = hrefElement.offset().top;
 				var hrefHeight = hrefElement.height();
-				// console.log('body from top: ', bodyFromTop);
-				// console.log(href + ' from top: ', hrefFromTop);
 				if (bodyFromTop <= hrefFromTop) {
-					// console.log(href);
-					// console.log(hrefFromTop);
 					element.addClass("active");
 				}
 			});
@@ -117,10 +111,6 @@ $(document).ready(function() {
 		var form = $(".contact form");
 		var submitButton = form.find("button[type=submit]");
 
-		// submitButton.click(function(e){
-		// 	e.preventDefault();
-		// });
-
 		var validateForm = function(inputs) {
 			var isValidationPassed = true;
 			// var inputs = $.makeArray(inputs);
@@ -148,13 +138,6 @@ $(document).ready(function() {
 
 		form.submit(function(e){
 			e.preventDefault();
-			console.log('entered');
-
-			// var inputs = {
-			// 	name: form.find("input[id=name]"),
-			// 	email: form.find("input[id=email]"),
-			// 	subject: form.find("input[id=subject]")
-			// };
 
 			var inputs = [];
 			inputs.push(form.find("input[id=name]"));
@@ -170,27 +153,22 @@ $(document).ready(function() {
 				};
 
 				var success = function(data) {
-					console.log(data);
 					$("#alert-success").show();
 					$("#alert-fail").hide();
 				};
 
 				var fail = function(data) {
-					console.log(data);
 					$("#alert-fail").show();
 					$("#alert-success").hide();
 				};
 
-				console.log(request.data);
 				$.ajax({
 					type: "POST",
 					url: request.url,
 					data: request.data,
 					success: success,
-					error: fail/*,
-					dataType: dataType*/
+					error: fail
 				});
-				console.log('submitted');
 			} else {
 				$("#alert-fields").show();
 			}
