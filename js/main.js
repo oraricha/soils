@@ -56,7 +56,7 @@ $(document).ready(function() {
 		var target = href.indexOf("#");
 		target = href.substr(target);
 
-		if (target === "#" || href.indexOf("references") >= 0) { return; }
+		if (target === "#" || href.indexOf("references, technology") >= 0) { return; }
 		e.preventDefault();
 		e.stopPropagation();
 
@@ -66,8 +66,12 @@ $(document).ready(function() {
 			scrollTop: scrollTo
 		}, 1500);
 
-		// make sure we updat the url for SEO parsing
-		window.location.href = href;
+		// fix bg blinking bug - we have to wait for the scrolling effect to finish
+		var waitForScroll = window.setTimeout(function() {
+			// make sure we updat the url for SEO parsing
+			window.location.href = href;
+			window.clearTimeout(waitForScroll);
+		},1450);
 	});
 
 	$("header.site-header nav").singlePageNav({
@@ -84,22 +88,22 @@ $(document).ready(function() {
 
 
 
-	$(".more").click(function(e) {
-		var $this = $(this);
-		var siblings = $(this).siblings();
-		var brief = $this.prevAll(".brief");
+	// $(".more").click(function(e) {
+	// 	var $this = $(this);
+	// 	var siblings = $(this).siblings();
+	// 	var brief = $this.prevAll(".brief");
 		
-		brief.slideToggle(function() {
-			if (brief.is(':visible')) {
-				$this.text("Read More");
-			} else {
-				$this.text("Read Less");
-			}
-		});
-		$this.prevAll(".technology").slideToggle();
+	// 	brief.slideToggle(function() {
+	// 		if (brief.is(':visible')) {
+	// 			$this.text("Read More");
+	// 		} else {
+	// 			$this.text("Read Less");
+	// 		}
+	// 	});
+	// 	$this.prevAll(".technology").slideToggle();
 
 		
-	});
+	// });
 
 	// resizeHeader();
 

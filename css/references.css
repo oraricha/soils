@@ -4930,6 +4930,7 @@ button.primary {
 .site-header h1 img {
   height: 85px;
   width: 145px;
+  margin-top: -10px;
 }
 .site-header nav {
   width: 100%;
@@ -5106,7 +5107,7 @@ section#main .solutions li a {
   margin-left: 0;
   position: absolute;
   bottom: 0;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 .next a {
   display: inline-block;
@@ -5241,7 +5242,10 @@ section:not(#main) .bg {
   margin-right: 0;
 }
 .solution .technology {
-  display: none;
+  float: right;
+}
+.solution .references {
+  float: left;
 }
 
 #groundwater-pollution-protecting {
