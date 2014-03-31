@@ -5019,11 +5019,23 @@ section#main .summary {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
+  float: none;
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem 3rem;
+  margin: 0 auto;
 }
 section#main .summary:last-child {
   margin-right: 0;
+}
+section#main .summary h2.slogen {
+  margin: 0 auto;
+  font-size: 4rem;
+  color: #2ecc71;
+  text-align: center;
+}
+section#main .summary h2 {
+  color: black;
+  text-align: center;
 }
 section#main .summary ul {
   list-style-type: disc;
