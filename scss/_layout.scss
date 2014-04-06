@@ -276,7 +276,7 @@ section#main {
 	}
 
 	.summary {
-		@include span-columns(6);
+		@include span-columns(9);
 
 		@extend .clearfix;
 		float: none;
