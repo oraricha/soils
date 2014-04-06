@@ -3,7 +3,7 @@
 	//if "email" is filled out, send email
 		//send email
 		$email = $_REQUEST['email'];
-		$to = "a@a.com, a@a.com";
+		$to = "uxappdev@gmail.com";
 		$name = $_REQUEST['name'];
 		$subject = "Message from sensoils.com (From:" . $name . "(" . $email . ")";
 		$message = $_REQUEST['message'];
